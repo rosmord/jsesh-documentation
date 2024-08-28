@@ -1,0 +1,24 @@
+====== Problèmes spécifiques aux traitements de texte======
+
+Hélas, hélas, hélas, le copier/coller et l'inclusion graphique sont bien plus complexes qu'ils ne devraient l'être, du fait d'un manque généralisé de coopération entre les principaux acteurs du domaine. Ainsi, nous discutons ici des problèmes liés aux traitements de texte spécifiques (et logiciels similaires).
+
+===== Choix de format pour les applications sur Macintosh =====
+
+À ce jour (21 avril 2016)
+
+  * Word 2011 pour Mac a commencé (enfin) à accepter le copier/coller de textes RTF contenant des images (la manière "standard" pour JSesh d'effectuer un copier/coller), et il accepte maintenant le format EMF. Le PDF n'est plus la "meilleure" solution car les images PDF ont tendance à être mal recadrées.
+  * Sur Word 2008, les formats utilisables sont RTF et PDF, PDF donnant les meilleurs résultats. Il semble que vous puissiez utiliser des images "EMF" dans l'export RTF. EMF donne de bien meilleurs résultats que MacPict.
+  * Sur word 2004, seul le RTF est raisonnable. Il doit être configuré pour utiliser des images MacPict
+  * Sur Nissus et Mellel, on peut utiliser soit le PDF soit le RTF. Comme le PDF conserve ses commentaires, il est possible de copier-coller vers et depuis JSesh. Pour RTF, vous devez utiliser MacPict comme format de sortie.
+  * Sur OpenOffice/NeoOffice, le PDF ne fonctionne pas encore, il faut donc utiliser RTF. Le format d'image suggéré est EMF (avec de meilleurs résultats graphiques).
+  * pour les logiciels non orientés texte (comme PowerPoint ou Keynotes) : utilisez PDF.
+
+
+===== Choix de format pour les applications Windows =====
+
+  * pour Word ou OpenOffice Writer : utilisez RTF, avec EMF comme format graphique. Vous pouvez également utiliser EMF directement.
+  * pour les logiciels non orientés texte (comme PowerPoint) : utilisez EMF.
+
+===== Choix de format pour les applications Linux=====
+
+Pour OpenOffice et al. : utiliser RTF, avec EMF comme format graphique.

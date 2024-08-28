@@ -1,0 +1,5 @@
+{{:doc:fr:menus:menuaide.png|}}
+
+Documentation : permet d'accéder à la présente documentation sur Internet
+
+A propos de : affiche le numéro de version de JSesh et quelques informations complémentaires.

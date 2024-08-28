@@ -1,0 +1,7 @@
+===== JSesh Documentation in Japanese / JSesh ユーザーズガイド =====
+
+(c) 2021 Dr Masakatsu Nagai / The University of Tokyo
+
+JSesh ユーザーズガイド【基本編】/ [[https://repository.dl.itc.u-tokyo.ac.jp/record/2000750/files/JSesh-Basic-Level_Nagai_v1.pdf|JSesh User’s Guide: Basic Level]]
+
+JSesh ユーザーズガイド【中級編】/ [[https://repository.dl.itc.u-tokyo.ac.jp/record/2000751/files/JSesh-Intermediate-level_Nagai_v1.pdf|JSesh User’s Guide: Intermediate Level]]

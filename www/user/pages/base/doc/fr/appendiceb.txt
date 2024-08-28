@@ -1,0 +1,198 @@
+====== Annexe B : Informations techniques sur le fichier de description des signes ======
+
+Attention : contenu techniquement explicite. Âmes pures, détournez les yeux. Un système plus convivial a été créé.
+
+Alternativement, vous pouvez éditer directement votre fichier de description. Vous n'avez besoin que d'un éditeur simple pour faire cela : le bloc-notes peut faire l'affaire sur Windows, et des logiciels comme TextWrangler peuvent être utilisés sur Mac OS X. Les fichiers XML sont constitués de texte brut.
+
+JSesh n'acceptera pas les fichiers mal formés, vous risquez donc de ne pas pouvoir lancer JSesh. Si c'est le cas, corrigez le fichier **sign_definition.xml** ou renommez-le en quelque chose d'autre, afin qu'il soit ignoré. À l'avenir, j'ajouterai un éditeur convivial, mais je ne le ferai pas tant que le format ne sera pas complètement défini.
+Le fichier doit avoir la forme suivante :
+<code>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE signs PUBLIC "-//ORG/QENHERKHOPESHEF//DTD SIGNDESCRIPTION 1.0" "sign_description.dtd">
+<signs>
+
+<!-- placez ici vos définitions de signes -->
+
+</signs>
+</code>
+
+Il est important d'avoir exactement ce contenu, en particulier la ligne DOCTYPE.
+
+Voici un petit exemple (en fait, une partie du fichier de description des signes standard de JSesh). Ce dossier décrit les signes C1 et C1A. Vous voyez qu'ils sont classés dans un certain nombre de catégories. Ce sont à la fois des divinités à tête humaine et des personnages assis. La translittération de C1 est donnée. Nous en avons également fourni un pour C1A. Le code ''"relevance='1'"'' signifie que cette translittération est ici uniquement à titre informatif. En fait, le format XML a été préparé pour accueillir beaucoup de données différentes, ce qui n'est pas encore vraiment utilisé par JSesh, et je suis très intéressé de recevoir des suggestions à ce sujet. La définition du format (son "dtd") est donnée juste après cette annexe.
+<code>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE signs PUBLIC "-//ORG/QENHERKHOPESHEF//DTD SIGNDESCRIPTION 1.0" "sign_description.dtd">
+<signs>
+
+<!-- Comme C est actuellement la partie la plus complète des polices JSesh, nous essayons de la couvrir entièrement. -->
+
+<tagCategory tag="divinité à tête humaine" label="divinité à tête humaine"/>
+<tagCategory tag="divinité à tête de faucon" label="divinité à tête de faucon"/>
+<tagCategory tag="divinité à tête d'ibis" label="divinité à tête d'ibis"/>
+<tagCategory tag="divinité à tête de bélier" label="divinité à tête de bélier"/>
+
+<sign sign="C1">
+ <hasTranslitteration sign="C1" translitteration="ra"/>
+ <hasTag tag="divinité à tête humaine"/>
+ <hasTag tag="assis"/>
+ <contains partCode="N6"/>
+</sign>
+
+<sign sign="C1A">
+ <similarTo baseSign="C1"/>
+ <hasTranslitteration translitteration="ra" relevance="1"/>
+ <hasTag tag="divinité à tête humaine"/>
+ <hasTag tag="assis"/>
+ <contains partCode="N6"/>
+ <contains partCode="S40"/>
+</sign>
+</signs>
+</code>
+Notez que les balises doivent être définies avant d'être utilisées (comme tagCategory). Un tag a un nom et une étiquette ; il est en effet possible de définir des étiquettes dans plusieurs langues, bien que cela ne soit pas vraiment utilisé par JSesh maintenant.
+
+===== DTD des descriptions de signes =====
+
+Pour les Geeks, voici la DTD actuelle utilisée pour les descriptions des signes. Elle est encore expérimentale, et a déjà changé depuis la version 2.4.13.
+
+<code>
+<!-- DTD utilisée pour décrire les caractéristiques des signes. -->
+<!-- NOM DU CATALOGUE : "-//ORG/QENHERKHOPESHEF//DTD SIGNDESCRIPTION 1.0" -->
+
+<!ENTITY % signInfo "variantOf|hasTransliteration|partOf|contains|signDescription|isDeterminative|hasTag|phantom"
+>
+
+<!ELEMENT signs (sign|determinativeCategory|tagCategory|tagLabel|%signInfo;)*>
+
+<!-- L'élément sign est facultatif, mais permet d'avoir un fichier mieux structuré. -->
+
+<!ELEMENT sign (%signInfo;)* >
+
+<!ATTLIST sign
+    sign CDATA #REQUIRED
+ alwaysDisplay (y|n) 'n'
+>
+
+<!--
+ La notion de variante utilisée ici est en quelque sorte ad-hoc.
+ Le problème des variantes est qu'il y a deux notions différentes derrière, toutes deux utiles dans notre logiciel.
+ La première notion est la variante LINGUISTIQUE. Un signe est une variante linguistique d'un autre s'il a les mêmes usages.
+ Par exemple, Y2 est une variante linguistique de Y1. Maintenant, Y2 "ressemble" également à Y1. Nous l'appellerons une "variation graphique".
+ Les deux notions sont indépendantes, bien que statistiquement liées. Par exemple, Z7 est une variante linguistique de G43, mais pas une variation graphique de celui-ci.
+
+ la notion de "ressembler" à un autre signe est couverte par l'attribut "isSimilar".
+
+ Dans de nombreux cas, notamment pour les déterminatifs, les signes ne sont pas toujours entièrement substituables les uns aux autres.
+ Pour permettre l'utilisation d'informations « variantes » dans les recherches, nous introduisons l'attribut « linguistique ».
+
+ Soit B une variante de A.
+ "complet" signifie que toutes les utilisations de B sont également des utilisations possibles de A, et toutes les utilisations de A sont des utilisations de B.
+ "autre" signifie que B est plus spécifique que A, ou que le degré est inconnu
+ "partiel" signifie que les utilisations de A et B se recoupent, mais elles ont également toutes deux des utilisations très différentes.
+  Par exemple, le signe D36 (ayin) est une variante partielle de D37 (di), car D36 peut écrire "di". Pourtant,
+  dans ce cas, je ne considérerai pas le D37 comme une variante du D36, car cela ferait plus de mal que de bien.
+ "non" est utilisé lorsque le signe n'est pas du tout une variante linguistique. Dansdans ce cas, isSimilar est normalement "y".
+
+-->
+
+<!ELEMENT variantOf EMPTY>
+<!ATTLIST variantOf
+ sign CDATA #IMPLIED
+ baseSign CDATA #REQUIRED
+ isSimilar (y|n) 'y'
+ linguistic (full|partial|other|no|unspecified)  'unspecified'
+>
+
+<!ELEMENT hasTransliteration EMPTY>
+<!-- le but principal de la translittération est d'aider quelqu'un à trouver un signe. -->
+<!-- quelques informations supplémentaires ci-dessous -->
+<!--
+    l'attribut "use" explique où la translittération sera visible dans JSesh.
+ "clavier" signifie que le signe est typique de cette translittération, c'est-à-dire qu'il doit être utilisé
+ dans le logiciel principal lorsque vous utilisez « espace » pour faire le tour des signes possibles.
+ "palette" signifie que le signe est une valeur pas trop inhabituelle pour une translittération donnée.
+ il doit être accessible via la palette.
+ "informatif" signifie que la valeur est ici à des fins d'information uniquement.
+
+ Type permet de spécifier d'où vient la valeur. Il se peut qu'un signe soit un vrai phonogramme (par exemple G1 pour aleph), ou un idéogramme, ou une abréviation, ou simplement être typique de certains mots (par exemple "bin" n'est pas vraiment une valeur pour G37 ; mais c'est typique. G37 est cependant une abréviation connue pour Sri.
+-->
+
+<!ATTLIST hasTransliteration
+ sign CDATA #IMPLIED
+ transliteration CDATA #REQUIRED
+ use (keyboard|palette|informative) 'keyboard'
+ type (phonogram|ideogram|abbreviation|typical) 'phonogram'
+>
+
+<!ELEMENT hasShape EMPTY>
+<!ATTLIST hasShape
+ sign CDATA #IMPLIED
+ shape (tallNarrow|lowBroad|lowNarrow) #REQUIRED
+ order CDATA #IMPLIED
+>
+
+<!ELEMENT partOf EMPTY>
+<!ATTLIST partOf
+ sign CDATA #IMPLIED
+ baseSign CDATA #REQUIRED
+>
+
+<!-- Plus facile à utiliser (et à déclarer) que isPartOf -->
+
+<!ELEMENT contains EMPTY>
+<!ATTLIST contains
+ sign CDATA #IMPLIED
+ partCode CDATA #REQUIRED
+>
+
+<!ELEMENT determinativeCategory EMPTY>
+<!ATTLIST determinativeCategory
+ category CDATA #REQUIRED
+ lang NMTOKEN 'en'
+ label CDATA #REQUIRED
+>
+
+<!ELEMENT isDeterminative EMPTY>
+<!ATTLIST isDeterminative
+ sign CDATA #IMPLIED
+ category CDATA #REQUIRED
+>
+
+<!ELEMENT hasTag EMPTY>
+<!ATTLIST hasTag
+ sign CDATA #IMPLIED
+ tag CDATA #REQUIRED
+>
+
+<!-- Déclare une balise (sans aucune étiquette) -->
+<!ELEMENT tagCategory (tagLabel)*>
+<!ATTLIST tagCategory
+ tag CDATA #REQUIRED
+>
+
+<!-- Declares a label for a tag. -->
+<!ELEMENT tagLabel EMPTY>
+<!ATTLIST tagLabel
+ tag CDATA #IMPLIED
+ lang NMTOKEN 'en'
+ label CDATA #REQUIRED
+>
+
+<!-- description du signe, au format du Manuel de codage.
+  - lang peut être utilisé pour décrire la langue. Utilisateur "fr" pour le français, "de" pour l'allemand...
+-->
+<!ELEMENT signDescription (#PCDATA)>
+<!ATTLIST signDescription
+ sign CDATA #IMPLIED
+ lang CDATA 'en'
+>
+
+<!-- Un fantôme est un code redondant. Il précise qu'un code donné est l'équivalent exact d'un autre.
+     Cela peut être utilisé à des fins de normalisation. Par exemple, il y a quelques signes qui ont des encodages différents dans winglyph, JSesh et Inscribe. L'utilisation du fantôme a) évite d'avoir plusieurs signes et b) permet de créer un texte normalisé.
+-->
+
+<!ELEMENT phantom EMPTY>
+<!ATTLIST phantom
+ baseSign CDATA #REQUIRED
+ existsIn CDATA 'jsesh'
+>
+</code>

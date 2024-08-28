@@ -1,0 +1,106 @@
+(12/01/2022 traduction en cours de révision)
+
+====== Création d'un signe avec Inkscape ======
+
+===== Présentation =====
+
+JSesh n'inclut pas encore d'éditeur de hiéroglyphes. Cependant, il peut inclure des signes dessinés avec un certain nombre d'autres logiciels, comme FontForge et Inkscape. Même si un éditeur de signes est ajouté, cette fonctionnalité sera conservée.
+
+Dans ce tutoriel, je montre comment utiliser le logiciel Inkscape pour créer un nouveau hiéroglyphe.
+
+Dessiner un nouveau signe est une tâche assez longue et fastidieuse. Cela nécessite une compréhension de base des éditeurs graphiques vectoriels (Inkscape, Adobe Illustrator...), ce qui n'est pas anodin, et cela demande aussi beaucoup de travail de toute façon. Non seulement vous devez dessiner de jolis signes, mais ces signes doivent être en harmonie avec les autres polices.
+
+===== Quelques notions sur le dessin vectoriel =====
+
+Dessiner des images vectorielles nécessite une certaine compréhension du sujet. Nous écrirons quelque chose à ce sujet plus tard (sauf si une âme bienveillante veut bien rédiger un joli tutoriel libre de droit ((tel que celui-ci : [[https://www.shpylgoreih.fr/documents/Tutoriel_Inkscape_libre_de_droits.pdf]].))).
+Exigence pour les signes utilisables par JSesh : vous devez dessiner vos signes sous forme de contours remplis en noir sur fond blanc. Le module d'import JSesh peut lire des contours non remplis, mais l'import donnera de meilleurs résultats avec des contours remplis de largeur nulle. Inkscape est capable de convertir des courbes en contours, ce n'est donc pas une exigence très lourde.
+
+===== Création d'une image de fond =====
+
+Vous pouvez commencer par obtenir une image du glyphe que vous souhaitez créer. Cette image peut être un dessin au trait ou une photographie d'un glyphe réel. Vous voulez que les lignes noires de votre panneau soient lisibles, changez donc les couleurs si nécessaire (par exemple, si vous avez un dessin au trait du signe, colorez-le en gris clair).
+Notre exemple sera un rendu basse résolution du signe C102 (Ptah assis avec wꜣs) de la stèle d'Israël.
+Le bitmap d'origine est {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/ptahHiero.png}}. Avec un programme de dessin, nous avons estompé l'image pour obtenir {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/ptahHiero1.png}}
+
+===== Dessiner le contour =====
+
+Nous démarrons maintenant Inkscape et importons le dessin bitmap dedans. Créez un nouveau calque, appelez-le "travail". De cette façon, nous ne perturberons pas le dessin bitmap.
+Nous allons ensuite tracer un contour approximatif de la forme du signe.
+Comme nous ne sommes pas de grands dessinateurs, nous utilisons l'outil "courbe de Bézier" pour le faire. On obtient le résultat suivant :
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/ink1.png |Premier croquis}}
+
+
+Notez que nous avons sélectionné "pas de remplissage" et une petite largeur de contour. Nous avons également laissé le signe « Was » de côté.
+
+===== Ajuster le contour =====
+
+Les segments de ligne droite ne feront pas un bon signe. Donc on convertit certains d'entre eux en courbe, on ajoute de nouveaux points si besoin, etc...
+On commence par la tête :
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/ink2.png |Montage de la tête de Ptah}}
+
+Et voici le résultat :
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/ink3.png |Ptah décrit}}
+
+===== Travail sur les détails =====
+
+Nous voulons que nos signes soient lisibles en petite taille, nous ne fournirons donc pas trop de détails.
+
+==== La barbe de Ptah ====
+
+Le contour du corps de Ptah sera agrandi pour faire le signe final. Mais nous aimerions que la barbe soit remplie ((ici nous avons donné à Ptah une barbe osirienne, ce qui est une erreur)). Par conséquent, nous devons la séparer du reste du dessin. Cela se fait en sélectionnant les points de contrôle qui séparent la barbe du corps :
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/ink4.png |Points de contrôle pour la barbe}}
+
+Et puis, en sélectionnant l'entrée "Séparer" dans le menu "Chemin", on obtient deux objets : la barbe et le reste du corps.
+On peut alors combler le vide que l'on vient de créer (et donner un menton à Ptah). :-)
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/ink5.png |Séparer la barbe}}
+
+Maintenant, la barbe doit également être fermée. Nous modifions les caractéristiques de remplissage et de trait de la barbe et nous lui donnons un remplissage noir uni, sans trait. Si la barbe est trop fine, on pourra la dilater avec l'action "départ" du menu chemin.
+
+==== Contrepoids du collier de Ptah ====
+
+Pour celui-ci, le scan d'origine est un peu approximatif. On creuse un peu l'iconographie, et on arrive à distinguer un collier avec contrepoids en deux parties.
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/ptah2.jpg |Figure de Ptah à Beit el Wali}}
+{{ https://www.shpylgoreih.fr/images/Ptah_Sokar_Sety_I.jpg }}
+
+Notre collier sera composé de deux parties : une corde et le contrepoids lui-même. La corde est un simple trait incurvé et le contrepoids est une zone pleine.
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/ink6.png |}}
+
+Nous voulons les joindre en un seul objet, qui sera une zone pleine. Pour ce faire, nous convertissons d'abord la corde en un trait.
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/ink7.png |}}
+
+On sélectionne ensuite les deux parties du collier, et on utilise l'opérateur "union" dans le menu "chemin".
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/ink8.png |}}
+
+===== Choisir la bonne largeur de ligne =====
+
+À ce stade, vous souhaiterez peut-être enregistrer votre travail deux fois. Une fois en tant que sauvegarde, et une, bien sûr, en tant que fichier de travail. Maintenant, sélectionnez le dessin principal et choisissez une largeur de trait raisonnable pour lui. Cela doit être harmonieux avec le reste des polices. Il peut être intéressant de faire un zoom arrière afin de voir le signe tel qu'il sera rendu.
+
+===== Unir tout =====
+
+Maintenant, assurez-vous que tous les traits sont transformés en chemin et utilisez l'opérateur Union sur eux. Vous devez obtenir ceci :
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/ink9.png }}
+
+Je vous suggère fortement de conserver une version de sauvegarde de votre signe dans laquelle les traits n'ont pas encore été transformés en chemin, cela vous permettra de retravailler votre signe plus facilement ou de le réutiliser dans le cadre d'autres signes. C'est ce que je fais pour mes fontes Ramesside.
+
+===== Ajout d'autres détails =====
+
+En utilisant les mêmes techniques, nous arrivons au résultat final :
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/ink10.png |Résultat final}}
+
+que nous sauvegardons sous le nom C102.svg.
+
+===== Commentaires finaux =====
+
+À partir d'une image de résolution plutôt faible, nous pouvons obtenir un glyphe d'apparence décente. N'oubliez pas que le signe sera plutôt petit et n'ajoutez pas trop de détails (donner la possibilité d'augmenter les détails du signe avec sa taille est une option intéressante, qui est utilisée dans les polices de Gardiner). Essayez de mélanger avec les signes existants. En fait, si vous avez des sources SVG pour des signes similaires, essayez de les réutiliser.
+
+Le signe donné dans cet exemple n'est pas un très bon exemple. Le "Wꜣs", par exemple, est trop élevé et le signe ne s'harmonisera pas très bien avec les polices existantes. Nous devrions donc raccourcir le sceptre. En général, notre Ptah est trop maigre par rapport aux autres signes. Garder des étapes intermédiaires de votre travail vous permettra de corriger les choses plus facilement. Par exemple, si les traits sont trop gras et si vous avez conservé une version du signe où les traits sont toujours des traits et n'ont pas encore été remplacés par des chemins, la correction est très facile.

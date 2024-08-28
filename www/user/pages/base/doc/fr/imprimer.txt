@@ -1,0 +1,4 @@
+====== Impression ======
+
+
+Actuellement, l'impression ne fonctionne pas et n'est *pas* une priorité. Utilisez plutôt l'exportation PDF ou SVG et imprimez à partir d'Acrobat Reader ou d'Inkscape. Merci.

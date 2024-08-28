@@ -1,0 +1,8 @@
+====== Éditer des textes ======
+
+  * [[editionSouris|Édition avec la souris]]
+  * [[editionClavier|Édition avec le clavier]]
+  * [[saisieMdc|Saisie directe de codes du Manuel de Codage]]
+  * [[editeurGlossaire|Éditeur de glossaire]]
+  * [[ombrageHachurage|Ombrer/Hachurer un texte]]
+

@@ -1,0 +1,7 @@
+[[doc:en:menus:wmini|Minimize]]\\ 
+[[doc:en:menus:wmaxi|Maximize]]\\ 
+----
+[[doc:en:menus:wunnamed|Unnamed]]\\ 
+----
+[[doc:en:menus:wglossary|Glossary]]\\ 
+[[doc:en:menus:whiero|Hieroglyphs]]

@@ -1,0 +1,8 @@
+====== Editing texts ======
+
+  * [[mouseEditing|Mouse Editing]]
+  * [[keyboardEditing|Keyboard Editing]]
+  * [[mdcEntry|Direct Manuel de Codage Entry]]
+  * [[glossaryEditor|Glossary Editor]]
+  * [[doc:en:specificproblems:shading|Shading/Hatching]]
+  * [[doc:en:specificproblems:shortTexts|Short Texts and Annotations]]

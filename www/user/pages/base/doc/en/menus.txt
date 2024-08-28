@@ -1,0 +1,27 @@
+====== JSesh Menus Explanation ======
+
+Windows Version: 7.5.5
+
+Macintosh Version: (tbs)
+===== Menus =====
+
+- [[doc:en:menus:application|Application menu (Mac only)]]
+
+- [[doc:en:menus:file|File]]
+
+- [[doc:en:menus:edit|Edit]]
+
+- [[doc:en:menus:group|Group Manipulation]]
+
+- [[doc:en:menus:sign|Sign]]
+
+- [[doc:en:menus:windows|Window]]
+
+- [[doc:en:menus:help|Help]]
+
+- [[doc:en:menus:hieroglyphs|Base Hieroglyphs]]
+
+
+
+
+

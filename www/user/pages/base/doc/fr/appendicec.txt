@@ -1,0 +1,140 @@
+====== Guide du développeur ======
+
+Si vous savez programmer en Java, vous pouvez utiliser JSesh comme bibliothèque pour vos propres programmes.
+
+===== Obtenir le code =====
+
+La méthode préférée est d'utiliser git, avec la commande :
+<code>
+git clone https://github.com/rosmord/jsesh.git
+</code>
+
+Normalement, la branche **master** contient du code à jour et compilable. C'est le seul que je suggère de cloner. D'autres branches sont
+  * production : corrections en cours et petits changements, qui seront appliqués à la branche master. C'est un travail en cours, alors ne vous attendez pas à ce qu'il se laisse compiler tout le temps.
+  * développement : travail en cours pour la prochaine version de JSesh
+  * jfx-test : quelques travaux pour voir comment adapter JSesh à Java FX.
+
+===== Compilation du code =====
+C'est
+    mvn install
+Avant cela, vous pouvez choisir la version de JSesh que vous souhaitez compiler. Diverses versions sont étiquetées. Alors, vous pourriez faire quelque chose comme
+    git checkout version-5.3
+    mvn clean install
+Pour compiler JSesh version 5.3. tous les tags peuvent être répertoriés en tapant
+    git tag
+
+Ensuite, vous pouvez utiliser les bibliothèques JSesh dans votre programme en les référençant dans votre fichier pom.xml. Par exemple:
+<code>
+
+<dependency>
+  <groupId>org.qenherkhopeshef</groupId>
+    <artifactId>jseshGlyphs</artifactId>
+    <version>5.3</version>
+  </dependency>
+  <dependency>
+    <groupId>org.qenherkhopeshef</groupId>
+    <artifactId>jsesh</artifactId>
+    <version>5.3</version>
+  </dependency>
+  <dependency>
+  <groupId>org.qenherkhopeshef</groupId>
+    <artifactId>qenherkhopeshefUtils</artifactId>
+    <version>5.3</version>
+  </dependency>
+</code>
+
+Notez qu'à partir de JSesh 6.7, le groupId sera remplacé par
+      <groupId>org.qenherkhopeshef.jsesh</groupId>
+afin de simplifier la gestion des dépôts maven (je veux pouvoir supprimer facilement toutes les anciennes versions de JSesh avec un simple rm sur mon ordinateur)
+
+Si vous voulez *exécuter* JSesh, le module est **jseshAppli**. La dernière version de jsesh-installer fournit deux dossiers, un pour Mac et un pour Windows, avec des distributions presque prêtes - la fin de la construction de la production est actuellement manuelle, voir README.md à la racine du projet JSesh.
+
+
+===== Comment faire =====
+
+==== Pour ajouter un champ d'édition hiéroglyphique dans une interface SWING ====
+
+En fait, c'est assez facile à faire. Vous devez avoir jsesh.jar dans votre chemin de classe, et probablement aussi jseshGlyphs.jar si vous voulez les polices complètes. Ensuite, avoir un champ hiéroglyphique dans votre application est aussi simple que ça :
+<code java>
+// Le package peut changer un jour dans un (lointain) avenir.
+import package jsesh.mdcDisplayer.swing.editor.*;
+public MyClass .... {
+   void buildInterface() {
+           // A large editor, better placed in a JScrollPane
+           JMDCEditor editor= new JMDCEditor();
+           // A TextField-like editor
+           JMDCField mdcField= new JMDCField();
+    }
+}
+</code>
+
+Maintenant, vous pouvez manipuler le texte directement via la classe HieroglyphicTextModel, qui représente le texte sous forme de liste d'objets, ou, si vous n'avez besoin que de fonctionnalités simples, utilisez les méthodes ''setMDCText(String mdc)'' et getMDCText() pour définir et récupérer le contenu du champ selon le "Manuel de codage".
+
+Vous pouvez interdire l'édition du texte avec "''setEditable(false)''"
+
+Une chose qui manque actuellement dans les bibliothèques (mais qui devrait être corrigée bientôt) est un moyen de diriger facilement les informations de la palette vers divers widgets JSesh (cela peut être fait avec la structure globale, mais ce n'est pas automatique du tout).
+
+==== Pour produire une image bitmap à partir d'un texte MDC ====
+
+Il existe un certain nombre de raisons pour lesquelles vous pouvez souhaiter produire une image à partir d'un texte MDC. Par exemple, vous pouvez utiliser JSesh comme bibliothèque dans une application Web.
+
+Bien sûr, vous devez avoir à la fois jsesh.jar et jseshGlyphs.jar dans votre chemin de classe. Actuellement (JSesh 2.13.7), vous avez également besoin de jvectClipboard-1.0.jar, mais c'est une dépendance que je supprimerai dans peu de temps. Vous aurez besoin de jvectClipboard-1.0.jar si vous souhaitez produire du SVG, WMF ou similaire. Ensuite, le code Java suivant fera l'affaire ((contrairement aux Datari républicaines : [[https://www.youtube.com/watch?v=Wp872x3_vc0]] (Note du traducteur).)) :
+<code java>
+    public static BufferedImage buildImage(String mdcText) throws MDCSyntaxError {
+            // Create the drawing system:                
+            MDCDrawingFacade drawing = new MDCDrawingFacade();
+           // Create the picture 
+           BufferedImage result = drawing.createImage(mdcText);
+           return result
+}
+</code>
+C'est tout. Une fois que vous avez une BufferedImage, elle peut être affichée à l'écran ou écrite en JPEG ou PNG en utilisant ImageIO.
+
+En option, il est possible de personnaliser le rendu. Voici un exemple complet prêt à l'emploi :
+<code java>
+/**
+ * How to use JSesh to create bitmaps in Java.
+ * compile: javac -cp .:/FOLDER_CONTAINING/jsesh.jar TestJSeshBitmap.java
+ * run: java -cp .:/FOLDER_CONTAINING/jsesh.jar TestJSeshBitmap
+ * 
+ * jseshGlyphs.jar and jvectClipboard-1.0.jar should be in the same folder as jsesh.jar.
+ * (normally, there is no need to add them explicitely to the class path , as jsesh.jar contains the necessary 
+ * information in its manifest.
+ */
+ 
+import  javax.imageio.ImageIO;
+import java.io.*;
+import java.awt.image.* ;
+import jsesh.mdcDisplayer.preferences.*;
+import jsesh.mdcDisplayer.draw.*;
+import jsesh.mdc.*;
+ 
+public class Test {
+    public static BufferedImage buildImage(String mdcText) throws MDCSyntaxError {
+        // Create the drawing system:                
+        MDCDrawingFacade drawing = new MDCDrawingFacade();
+        // Change the scale, choosing the cadrat height in pixels.
+        drawing.setCadratHeight(60);
+        // Change a number of parameters 
+        DrawingSpecification drawingSpecifications = new DrawingSpecificationsImplementation();
+        PageLayout pageLayout= new PageLayout();
+        pageLayout.setLeftMargin(5);
+        pageLayout.setTopMargin(5);
+        drawingSpecifications.setPageLayout(pageLayout);
+        drawing.setDrawingSpecifications(drawingSpecifications);
+        // Create the picture 
+       BufferedImage result = drawing.createImage(mdcText);
+       return result;
+    }
+ 
+public static void main(String args[]) throws MDCSyntaxError, IOException {
+              // Create the picture
+              BufferedImage img= buildImage("i-w-r:a-C1-m-p*t:pt");
+              File f = new File("example.png");
+              // save it in png (better than jpeg in this case)
+              ImageIO.write(img, "png", f);
+  }
+}
+</code>
+La taille des signes est contrôlée à l'aide de 'drawing.setCadratHeight();'.
+(note à moi-même : il devrait être plus facile de changer la taille de tout en utilisant drawingSpecification !)

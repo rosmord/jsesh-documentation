@@ -1,0 +1,41 @@
+{{:doc:fr:menus:menugroupes.png|}}
+
+Grouper horizontalement : crée un groupe horizontal de deux signes (les deux signes ne faisant plus qu’un élément sélectionnable)
+
+Grouper verticalement : crée un groupe vertical de deux signes (les deux signes ne faisant plus qu’un élément sélectionnable)
+
+Ligaturer : superpose tous les signes sélectionnés en un seul
+
+Ligaturer groupe et hiéroglyphe : superpose un groupe par-dessus un signe
+
+Ligaturer hiéroglyphe et groupe : superpose un signe par-dessus un groupe
+
+Séparer : supprime un groupe ou une ligature
+
+Éditer le groupe : appelle l’éditeur de groupes
+
+Insérer un espace : insère un espace à la position du curseur
+
+Insérer un quart d’espace : insère un quart d’espace à la position du curseur
+
+Nouvelle page : ajoute un séparateur de page (trait horizontal)
+
+Insérer ponctuation rouge : ajoute un point rouge à la position du curseur
+
+Insérer ponctuation noire : ajoute un point noir à la position du curseur
+
+Symboles de hachure : permet d’ajouter une hachure complète, horizontale, verticale ou un quart de hachure
+
+Hachurer une zone : hachure un ensemble contigu de signes
+
+Supprimer les hachures : supprime les hachures des signes sélectionnés
+
+Mettre en rouge : change en rouge la couleur des signes sélectionnés
+
+Mettre en noir : change en noir la couleur des signes sélectionnés
+
+Hachures : permet de positionner une ou des hachures dans un cadrat (16 positions)
+
+Cartouches : ajoute un cartouche ou serekh autour des signes sélectionnés (23 possibilités)
+
+Marques ecdotiques : ajoute une marque ecdotique à la position du curseur

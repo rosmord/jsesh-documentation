@@ -1,0 +1,20 @@
+====== JSesh Menus Explanation ======
+===== Menus =====
+
+- [[doc:en:menus:application|Application menu (mac only)]]
+
+- [[doc:en:menus:file|File]]
+
+- [[doc:en:menus:edit|Edit]]
+
+- [[doc:en:menus:group|Group]]
+
+- [[doc:en:menus:sign|Sign]]
+
+- [[doc:en:menus:windows|Windows]]
+
+- [[doc:en:menus:hieroglyphs|Base Hieroglyphs]]
+
+
+
+

@@ -1,0 +1,66 @@
+====== Translittération ======
+L'édition de la translittération devrait être une affaire simple. Après tout, il n'utilise que quelques signes alphabétiques. Hélas, ce n'est pas le cas.
+Dans le MdC, une norme simple basée sur l'ASCII a été utilisée. Mais cette norme nécessite des polices spéciales, où "a" n'est pas "a" mais "ayin".
+Cela a conduit à de nombreux problèmes lors de l'échange de textes. Passer du Mac au PC était un vrai problème, et les éditeurs étaient très mécontents.
+Des centaines d'heures de travail inutile ont été consacrées à la conversion des fichiers - ou à leur ressaisie.
+
+Normalement, Unicode devrait résoudre tous ces problèmes ((comme je l'ai écrit ailleurs, je pense qu'Unicode pour les hiéroglyphes est une tout autre affaire)). Ainsi, actuellement, JSesh propose des choix à l'utilisateur. Votre choix personnel dépendra de ce que vous voulez faire avec vos textes. Il est fort probable que l'unicode soit nécessaire pour la plupart des publications, par exemple.
+
+Vous pouvez choisir la manière dont la translittération sera traitée dans le menu Préférences.
+
+===== Utiliser une police unicode =====
+
+Pour utiliser une police unicode, vous devez disposer d'une police avec les bons signes. Actuellement, les polices gratuites possibles sont :
+  * [[http://jsesh.qenherkhopeshef.org/pack_translit.zip|EgyptoSerif]], ma propre police de translittération. Les signes ne sont pas très beaux, mais ils sont au bon endroit.
+  * Gentium Plus
+  * Nouvel Athena Unicode (voir les détails exacts)
+
+{{ :doc:en:fontsprefsunicodetranslit.png?800 |}}
+
+  - Vous devez ouvrir le menu "Préférences" (sur Mac, c'est dans le menu "JSesh" ; ailleurs, c'est sous le "Menu Edition").
+  - Allez dans l'onglet « Préférences de polices ».
+  - Sélectionnez une police pour la translittération
+  - Ouvrez le panneau "Afficher les options" et cochez "Police de translittération Unicode"
+==== Problèmes actuels avec les polices Unicode ====
+
+Le support actuel dans le système d'exploitation et les logiciels pour les polices de translittération n'est pas bon. Même Java sur Mac - et donc JSesh - a des problèmes.
+
+Les vrais problèmes sont H̱ et yod
+
+=== Majuscule H̱ ===
+Sur certains systèmes, H̱ (comme dans le dieu-bélier //H̱nmw//) s'affiche mal. Cela dépend de la police **et** du logiciel **et** du système. Dans la plupart des cas, ça va. Une exception ennuyeuse est qu'il ne donne pas un bon résultat avec JSesh **sur Mac OS X**. Apparemment, le système de rendu donne de meilleurs résultats sous Windows. Notez que si vous collez votre texte dans un traitement de texte, vous obtiendrez probablement un bon résultat de toute façon.
+
+=== Yod ===
+ Unicode vous offre un certain nombre de choix. J'ai sélectionné les deux meilleures solutions (la troisième, utilisant une sorte de demi-cercle de l'accent yod, reproduit simplement une astuce utilisée lorsque les gens avaient des machines à écrire et fabriquaient à la main leurs yods avec des lettres "c"). Le problème est que, techniquement, le support pour ces solutions fait défaut.
+
+Le yod est censé être codé avec un "i" (un i //pointillé//, pas un sans point) et un accent. La police doit contenir suffisamment d'informations pour afficher correctement ces signes. Le problème est que beaucoup de logiciels ne regardent pas le contenu de la police et fonctionnent tout seuls. Le résultat est que le point n'est pas supprimé sur de nombreux systèmes (y compris JSesh sur Mac). Le positionnement de l'accent devant le « I » majuscule est un autre problème.
+
+Avec une configuration correcte, il est possible d'obtenir de bons résultats avec OpenOffice et Word.
+
+
+Les deux possibilités pour yod sont
+  - U+0313 Comme i + "virgule au dessus" est déjà utilisé dans d'autres langues, ses chances d'être correctement supporté sont meilleures. Le seul problème est que dans l'affichage normal de cette combinaison pour le "I" majuscule, l'accent est censé être au-dessus du I. Comme vous le savez, l'affichage correct du yod majuscule a l'accent devant le "I". Si vous pouvez vivre avec cela, cette solution est la plus sûre. Il donne de bons résultats dans la plupart des cas (mais pas avec Java et Mac OS X, donc l'affichage JSesh sur Mac n'est pas correct).
+  - U+0486 cet accent a la particularité intéressante de n'être utilisé pour rien d'autre sur les lettres latines. Ainsi, une police est libre de la placer devant le "I" majuscule. En théorie, c'est la bonne solution. En pratique, cela fonctionne avec certains logiciels, mais pas tous. OpenOffice donne de bons résultats, ainsi que le logiciel tout simple TextEdit sur Mac. J'ai pu réussir avec Word sur Mac en activant toutes les ligatures.
+
+JSesh ne prend pas en charge le système IFAO/Unicode actuel. Cette norme était un "patch" temporaire utilisant des signes Unicode disponibles, effectué lorsqu'aucun encodage n'était disponible pour la translittération égyptienne.
+Maintenant que "Aleph" et "Ayin" ont du code, j'encourage (enfin, j'impose) :-) leur utilisation.
+
+=== Références ===
+* [[http://en.wikipedia.org/wiki/Transliteration_of_Ancient_Egyptian|Article Wikipédia sur la translittération et l'unicode]]
+
+
+===== Ne pas utiliser unicode =====
+Vous pouvez sélectionner une police avec un encodage compatible MdC. Dans ce cas, JSesh ne traite pas les majuscules. Vous pouvez choisir votre propre police, si vous en avez une, ou utiliser la police de translittération JSesh par défaut. Une version de cette police est embarquée dans le logiciel, mais vous pouvez l'installer sur votre système (à utiliser avec un traitement de texte par exemple). Une copie de cette police est disponible dans le dossier Polices de l'installation de JSesh (sur Mac).
+
+==== Méthode simple avec l'ancienne police ====
+
+Vous devez ouvrir le menu "Préférences" (sur Mac, c'est dans le menu "JSesh" ; ailleurs, c'est sous le "Menu Edition"). Allez dans l'onglet "Préférences de polices" et cliquez sur le bouton "Utiliser l'ancienne police de translittération".
+
+{{ :doc:en:fontprefsmdctranslit.png?800 | }}
+
+Et c'est tout. Pour vos propres documents Word (ou OpenOffice...), vous pouvez trouver la police dans le dossier de l'application JSesh (dans le dossier "Polices" sur Mac).
+
+==== Utilisation de vos propres polices compatibles MdC ====
+Si vous avez une police compatible avec le MdC (c'est-à-dire que le "a" représente un ayn, le "A" représente un aleph, etc...), vous pouvez également l'utiliser.
+
+Sélectionnez simplement votre police (en utilisant "Choisir la police" devant la police de translittération), puis, dans les options avancées, sélectionnez "Police de translittération MdC (non Unicode)".

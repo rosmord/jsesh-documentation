@@ -1,0 +1,20 @@
+====== Explication des menus de JSesh ======
+
+Version Windows 10 : 7.5.5
+
+Version Macintosh macOS 12.1 Monterey : 7.5.5
+
+===== Menus =====
+
+- [[doc:fr:menus:file|Fichier]]
+
+- [[doc:fr:menus:edit|Édition]]
+
+- [[doc:fr:menus:group|Manipulation de groupes]]
+
+- [[doc:fr:menus:sign|Signes]]
+
+- [[doc:fr:menus:windows|Fenêtre]]
+
+- [[doc:fr:menus:help|Aide]]
+

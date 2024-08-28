@@ -1,0 +1,33 @@
+====== Informations avancées dans Inkscape======
+
+===== Présentation =====
+
+JSesh a maintenant un mécanisme de ligature relativement avancé, qui n'est pas aussi bon que celui de RES, mais donne des résultats raisonnables dans la plupart des cas. Dans de nombreux cas, JSesh est capable de « deviner » où les groupes ligaturés doivent s'insérer, mais il peut également le faire avec une aide supplémentaire. Cette aide peut être fournie dans le fichier SVG du signe lui-même, et nous avons décidé d'utiliser les mécanismes d'inkscape pour cela.
+
+===== Zones de ligature =====
+
+Pour chaque signe, JSesh tentera de calculer deux zones de ligatures, une pour les ligatures de groupes avant le signe, l'autre pour les ligatures de groupes après le signe. Ces zones peuvent être calculées automatiquement, mais l'auteur du signe peut également les spécifier lui-même.
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/zones1.png |Le panneau A17 avec ses deux zones de ligature}}
+
+Pour créer l'une des deux zones de ligature dans Inkscape, procédez comme suit :
+
+  - créer un rectangle où le groupe doit s'adapter. Notez que l'ensemble du groupe sera mis à l'échelle pour y tenir, alors dessinez-le suffisamment grand. Je dessine habituellement ces rectangles en rouge, mais ce n'est qu'une convention.
+  - ouvrez le menu contextuel du rectangle (clic droit sur le rectangle), et sélectionnez les propriétés de l'objet. Vous obtiendrez la fenêtre des propriétés de l'objet (Figure « Propriétés de la zone » ci-dessous.) Définissez l'ID comme « zone1 » ou « zone2 ». N'oubliez pas de cliquer sur le bouton **Définir** pour valider votre modification. Puis effacez la valeur du champ **Étiquette** (plus d'informations à ce sujet dans la section intitulée « Gravité des zones de ligature »).
+
+Convenons-en, nous utilisons les informations d'identification et d'étiquette d'une manière inacoutumée. La raison en est purement pragmatique. C'est beaucoup plus facile de faire les choses de cette façon, car le créateur du signe n'a pas besoin de connaître l'organisation interne du format XML.
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/zoneProperties.png |Propriétés de la zone}}
+
+===== Gravité des zones de ligature  =====
+
+Le groupe ligaturé ira quelque part dans la zone de ligature. Mais où exactement ? Il peut se tenir au milieu de la zone ou s'accrocher à l'un de ses côtés. En fait, le comportement de l'algorithme de mise en page n'est pas toujours le même. Dans {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/w_and_t.png}}, le "t" a tendance à s'adapter en bas à gauche de la zone rectangulaire. Dans {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/Hm_kA.png}}, le signe U36 est plus ou moins centré, à la fois horizontalement et verticalement. JSesh permet aux auteurs de signes de concevoir le comportement des "zones de ligature", de la manière exposée ci-dessous. Rappelez-vous de la valeur de l'étiquette supprimée dans le paragraphe précédent. Vous pouvez la renseigner selon la syntaxe suivante :
+
+  gravité : spécification de gravité.
+
+où la spécification de gravité peut contenir les valeurs suivantes :
+
+  *"s" ou "e" pour demander au groupe de se tenir du côté départ ou du côté fin de la zone ((le début et la fin sont tirés du RES de M.-J. Nederhof, et évitez l'utilisation de "gauche" et "droite", qui ne sont pas vraiment utilisables pour les hiéroglyphes !)). Si ni "s" ni "e" ne sont spécifiés, le groupe sera centré horizontalement.
+  * "t" ou "b" pour demander au groupe de se tenir en haut ou en bas de la zone. Si ni "t" ni "b" n'est spécifié, le groupe sera centré verticalement.
+
+"Propriétés de la zone", ''gravity:te'' signifie que le groupe qui serait ligaturé dans la zone1 (devant le signe "enfant") collerait au haut du rectangle rouge, et resterait près du signe, par exemple {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/W_Xrd.png}}.

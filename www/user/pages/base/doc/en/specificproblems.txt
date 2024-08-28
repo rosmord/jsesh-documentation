@@ -1,0 +1,3 @@
+Specific editing problems
+
+  * [[doc:en:specificproblems:shading|Shading/Hatching]]

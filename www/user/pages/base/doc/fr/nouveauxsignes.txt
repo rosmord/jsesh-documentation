@@ -1,0 +1,20 @@
+====== Extension de la liste des signes======
+
+===== Présentation =====
+
+À partir de la version 2.0beta, les utilisateurs de JSesh peuvent créer leurs propres signes. Un éditeur de signes et un système de base de données élaboré sont prévus à l'avenir, mais, de façon plus pratique, il a été décidé de permettre l'importation de signes créés avec différents logiciels.
+
+Donc : a) JSesh n'a actuellement pas d'éditeur de signes mais b) JSesh peut importer des signes depuis :
+  * des polices TrueType (voir l'éditeur gratuit FontForge) ;
+  * des fichiers SVG : SVG est un format relativement récent pour les graphiques vectoriels. Il est très puissant et complet. Actuellement, JSesh comprend les fichiers SVG si le signe est dessiné en noir sur blanc. Vous pouvez éditer des fichiers SVG avec un certain nombre de programmes ; l'un des meilleurs gratuits est Inkscape, qui a l'avantage d'être multi-plateformes.
+
+Pour la compatibilité avec mon ancien logiciel (tksesh), il peut aussi lire :
+  * les fichiers de polices exportés depuis tksesh (fichiers .tml)
+  * les fichiers de polices des utilitaires de polices GNU (fichiers .bzr). Les deux types de fichiers peuvent être édités avec le logiciel FontEdit, inclus dans tksesh. Mais cela n'a que peu d'intérêt pour l'utilisateur générique.
+
+===== Contenu =====
+
+  - [[importingGlyphs|Importation de nouveaux glyphes]]
+  - [[inkscape|Création d'un signe avec Inkscape]]
+  - [[inksapeAdvanced|Informations avancées dans Inkscape]]
+  - [[svg|Parties de SVG comprises par JSesh]]

@@ -1,0 +1,18 @@
+[[doc:en:menus:fnew|New]]\\ 
+[[doc:en:menus:fopen|Open...]]\\ 
+[[doc:en:menus:fopenrecent|Open Recent]]\\ 
+----
+[[doc:en:menus:fclose|Close]]\\ 
+[[doc:en:menus:fsave|Save]]\\ 
+[[doc:en:menus:fsaveas|Save As...]]\\ 
+[[doc:en:menus:fimport|Import]]\\ 
+[[doc:en:menus:fexport|Export]]\\ 
+----
+[[doc:en:menus:fsetasmodel|Set as Model]]\\ 
+[[doc:en:menus:fusemodel|Use Model Preferences]]\\ 
+----
+[[doc:en:menus:fdocprop|Document Properties]]\\ 
+[[doc:en:menus:fformat|Format]]\\ 
+----
+[[doc:en:menus:fimportsign|Import new Sign]]\\ 
+[[doc:en:menus:fexit|Exit]]

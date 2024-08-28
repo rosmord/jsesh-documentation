@@ -1,0 +1,35 @@
+====== Trucs et astuces sur l'encodage de textes hiéroglyphiques ======
+
+
+Avant de décrire le manuel de codage lui-même, j'aimerais faire une ou deux remarques sur la façon dont on devrait encoder un texte hiéroglyphique.
+
+Typiquement, vous avez une source, qui peut être a) une source imprimée, avec des hiéroglyphes composés, b) une photographie ou un fac-similé fidèle du texte original, ou c) un hiéroglyphe manuscrit d'une publication égyptologique (par exemple, l'Urkunden).
+
+Vous devez décider à quel point vous devez être fidèle à l'original, et ce n'est pas une question simple. Le premier point est que vous pouvez être sûr que votre texte de Manuel de Codage ne peut pas être un fac-similé, donc, d'une manière ou d'une autre, il trahira l'original. Si le texte est finalement un texte hiératique, vous créez déjà quelque chose de complètement différent de toute façon.
+
+Maintenant, lorsque vous avez un signe, devez-vous rechercher la variante la plus précise ou en utiliser une en quelque sorte standardisée ? Pour y répondre, il faut se demander si cette variante est pertinente, dans le texte, et dans l'usage que l'on entend en faire. Par exemple, dans les textes Kanaïs de Sethi Ier, le pronom à la première personne utilise de nombreuses variantes de A40 ({{http://jsesh.qenherkhopeshef.org/files_jsesh/images/A40.png}}). Si vous souhaitez que le texte soit destiné à une étude grammaticale, ce n'est pas très pertinent. Si vous vous demandez si c'est un jeu libre d'ajouter de la diversité au texte, alors vous pouvez prendre le temps d'encoder les variantes. En règle générale, **si vous êtes débutant en égyptien,** je vous conseille d'encoder le signe "standard", car il vous obligera // à lire le texte, pas à copier les signes //. Le problème que vous rencontrez quand vous voulez être très précis, c'est que vous trouverez de nombreux cas de variantes qui n'ont de toute façon aucun encodage, et vous prenez le risque de tromper vos lecteurs en donnant une fausse impression de précision.
+
+Lorsque votre source est une version manuscrite d'un texte, comme dans les Urkunden, méfiez-vous d'un point : à moins qu'un signe ne soit très particulier, un égyptologue dessinera généralement ses glyphes de la manière la plus simple. Cela signifie, par exemple, qu'il utilisera V23A ({{http://jsesh.qenherkhopeshef.org/files_jsesh/images/V23A.png}}) au lieu de {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/V22.png}} (V22) qui est le signe hiéroglyphique normal. Vous devez comprendre cela, et lorsqu'une sélection de signe est simplement causée par la main individuelle de l'auteur, rendez-la avec le signe "standard". En revanche, lorsque l'auteur a dessiné une forme de signe très spécifique, il peut être intéressant de lui accorder plus d'attention.
+
+===== Encodage de textes hiératiques =====
+
+
+La règle ci-dessus est encore plus forte pour les textes hiératiques. Il ne sert à rien de faire une distinction entre {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/V23A.png}} et {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/V22.png}} , car les deux sont rendus de la même manière en hiératique !
+
+Or, il y a un certain nombre de particularités du hiératique qui méritent plus d'attention. Ceux-ci ont été identifiés par sir Alan Gardiner dans son article "The Transcription of New Kingdom Hieratic", //JEA// 15 (1929), p. 48-55. Le rendu des textes hiératiques doit faire allusion à la façon dont les signes originaux sont placés, afin de permettre au lecteur de comprendre la raison du rendu, et de revenir à l'original si nécessaire.
+JSesh inclut un certain nombre de signes utiles pour le rendu des textes hiératiques :
+
+^Signez ^Codez ^Utilisez^
+|{{http://jsesh.qenherkhopeshef.org/files_jsesh/images/Ff1.png}}| Ff1|un signe particulier aux textes ramessides, qui sert en quelque sorte de « joker ». c'est différent du signe Z5 ({{http://jsesh.qenherkhopeshef.org/files_jsesh/images/Z5.png}}). Vous pouvez l'obtenir dans JSesh en tapant "," (virgule) puis la touche espace.|
+|{{http://jsesh.qenherkhopeshef.org/files_jsesh/images/Ff100.png}}|Ff100|un signe non standard, "dot space fill". Utilisez-le pour rendre les différents points qu'un scribe peut utiliser, lorsqu'ils ne sont pas une ponctuation.|
+|{{http://jsesh.qenherkhopeshef.org/files_jsesh/images/Ff101.png}}|Ff101|un panneau non standard, remplisseur d'espace horizontal. Utilisez-le pour rendre divers signes horizontaux dénués de sens que le scribe peut utiliser pour combler les vides.|
+
+JSesh inclut également des signes spécifiques pour les nombres dans les textes hiératiques. Dans ces textes, le "déterminatif" Z1 est souvent plus petit que le "chiffre" Z1. Un rendu négligent peut entraîner la lecture de {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/hrw3.png}} hrw 3 alors que l'original a {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/hrw2.png}}, qui est clairement hrw 2.
+
+===== Disposition des signes =====
+
+Utilisez les différentes capacités de "ligature" de JSesh, et si tout le reste échoue, optez pour "l'éditeur de groupe".
+
+Quelques points intéressants :
+
+Dans le groupe "M17-M17", les signes doivent souvent être plus proches que ne le permet l'espacement standard de JSesh (en fait, cela est déjà indiqué par sir A. Gardiner dans le catalogue de ses polices). Si l'on écrit i*i:k (c'est-à-dire deux yod groupés horizontalement et un "k" en dessous), le groupe créé par JSesh est {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/pAyk2.png}}. Pour obtenir la meilleure mise en page : {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/pAyk1.png}} est simple : il suffit de ligaturer les deux yods (tapez "i" "&" "i", par exemple).

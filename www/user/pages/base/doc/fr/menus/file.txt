@@ -1,0 +1,31 @@
+{{:doc:fr:menus:menufichier.png|}}
+
+Nouveau	:		création d’un document (extension .gly)
+
+Ouvrir	:		ouvre un document existant
+
+Documents récents :	liste les derniers documents utilisés (ouverts ou créés)
+
+Fermer :		ferme le document en cours d’édition
+
+Sauver :		enregistre les modifications apportées à un document
+
+Sauver sous :		enregistre les modifications apportées à un document sous un autre nom
+
+Importer :		importe un document au format PDF ou RTF par copier/coller
+
+Exporter :		exporte le document en cours d’édition selon différents formats : JPEG, PNG, WMF, EMF, 
+MacPict, EPS, SVG, PDF, RTF ou HTML.
+
+Utiliser comme modèle : (tbs)
+
+Appliquer les préférences
+à ce document :		lorsque JSesh ouvre un document .gly, les premières lignes du fichier contiennent les préférences qui ont été sélectionnées pendant son édition. Si l’on change ces préférences avec JSesh, celles-ci sont mises à jour dans le fichier .gly au moment de son enregistrement, mais l’on peut aussi ouvrir un nouveau document dans une deuxième session d’édition et choisir d’appliquer les préférences de la première session en utilisant l’option « Appliquer les préférences à ce document ».
+
+Propriétés du document : permet de modifier les préférences de dessin
+
+Format :		permet de changer le format d’affichage des textes, en lignes, en colonnes, de gauche à droite, de droite à gauche, etc.
+
+Importer un nouveau signe : permet d’importer dans la session d’édition un nouveau signe, au format TTF, bzr ou SVG.
+
+Quitter :		termine la session d’édition.

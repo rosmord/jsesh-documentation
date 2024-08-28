@@ -1,0 +1,4 @@
+
+{{ :doc:cover.png?direct |}}
+
+

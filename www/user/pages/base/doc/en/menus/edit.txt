@@ -1,0 +1,36 @@
+[[doc:en:menus:eundo|Undo]]\\ 
+[[doc:en:menus:eredo|Redo]]\\ 
+----
+[[doc:en:menus:ecut|Cut]]\\ 
+[[doc:en:menus:ecopy|Copy]]\\ 
+[[doc:en:menus:epaste|Paste]]\\ 
+[[doc:en:menus:eduplicate|Duplicate]]\\ 
+[[doc:en:menus:edelete|Delete]]\\ 
+----
+[[doc:en:menus:eselectall|Select All]]\\ 
+[[doc:en:menus:edeselectall|Deselect All]]\\ 
+----
+[[doc:en:menus:efind|Find...]]\\ 
+[[doc:en:menus:efindnext|Find Next...]]\\ 
+[[doc:en:menus:efindinfolder|Find in Folder]]\\ 
+----
+[[doc:en:menus:ecopyas|Copy as]]\\ 
+----
+[[doc:en:menus:eedithiero|Edit Hieroglyphic Text]]\\ 
+[[doc:en:menus:eeditlatin|Edit Latin text]]\\ 
+[[doc:en:menus:eedititalic|Edit Italic text]]\\ 
+[[doc:en:menus:eeditbold|Edit Bold Text]]\\ 
+[[doc:en:menus:eedittrans|Edit Transliteration]]\\ 
+[[doc:en:menus:eedituptrans|Edit Uppercase Transliteration]]\\ 
+[[doc:en:menus:eeditlinenum|Edit Line Numbers]]\\ 
+----
+[[doc:en:menus:einsertnextline|Insert Next Line Number]]\\ 
+[[doc:en:menus:einserttext|Insert Short Text]]\\ 
+----
+[[doc:en:menus:eaddselection|Add Selection to Glossary]]\\ 
+----
+[[doc:en:menus:ecopysmall|Copy small size]]\\ 
+[[doc:en:menus:ecopylarge|Copy large size]]\\ 
+[[doc:en:menus:eCopywysiwyg|Copy wysiwyg]]\\ 
+----
+[[doc:en:menus:ePreferences|Preferences...]]

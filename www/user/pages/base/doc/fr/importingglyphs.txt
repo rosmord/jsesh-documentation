@@ -1,0 +1,73 @@
+====== Importation de nouveaux glyphes ======
+
+
+===== Choisir un dossier pour vos signes=====
+
+Afin de pouvoir ajouter de nouveaux signes, vous devez d'abord choisir où ils seront stockés sur votre ordinateur. Pour ce faire, sélectionnez simplement **Outils/Modifier les préférences**.
+Dans l'onglet **Sélection des polices** (le seul disponible actuellement), saisissez le dossier que vous souhaitez utiliser dans le champ **Répertoire des polices hiéroglyphiques**. Vous devez créer un dossier vide à cet effet spécifique.
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/glyphDir1.png |Créer un dossier}}
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/glyphDir2.png |Le dossier est sélectionné}}
+
+
+Vous n'avez à le faire qu'une seule fois. Les prochains appels de JSesh utiliseront ce dossier.
+===== Insertion réelle du signe=====
+
+Pour ajouter de nouveaux signes, vous devez les importer à partir d'un fichier créé avec un autre logiciel, puis attribuer de nouveaux codes aux signes créés. L'interface d'import de signes peut être lancée à partir du menu **Outils/ajouter de nouveaux signes**.
+L'import des signes se fait en deux phases :
+
+  * vous importez une image ou un ensemble d'images à partir d'un fichier (dessins SVG, polices TrueType, etc.)
+
+  * vous attribuez un code pour chaque signe que vous avez importé, puis vous insérez le nouveau signe dans la liste des signes JSesh.
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/importSigns1.png |Nouvelle interface d'importation de signes}}
+==== Importation de dessins ====
+
+
+L'importation de dessins est simple. JSesh peut lire :
+
+  * des polices TrueType
+  * des fichiers .tml et bzr, qui peuvent être créés avec le précurseur de JSesh, tksesh.
+  * des fichiers SVG
+
+Cliquez simplement sur le bouton **Importer le fichier**, et sélectionnez le fichier qui contient votre (vos) image(s). Vous pouvez utiliser les boutons de navigation (ceux avec des flèches) pour parcourir les signes disponibles.
+
+==== Affiner vos signes ====
+
+Dans certains cas, la taille ou l'orientation de vos signes ne sera pas correcte. Par exemple, dans l'image ci-dessous, le canard est trop gros et son orientation est erronée.
+
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/importSigns2.png |Réglage fin}}
+
+Vous pouvez corriger ceci :
+  * les boutons {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/importSigns3.png}} et {{http://jsesh.qenherkhopeshef.org/files_jsesh/images/importSigns4.png}} peuvent être utilisés pour changer l'orientation du signe;
+  * le bouton **Pleine hauteur cadrat** donne au signe la même taille que le signe A1 ;
+  * si vous cliquez sur la fenêtre du signe et faites glisser la souris, la position de la souris définira la hauteur du signe.
+==== Attacher des codes aux dessins et les insérer dans JSesh ====
+
+Une fois que votre signe est correct, il est temps de lui donner un nom. Dans un certain nombre de cas, JSesh en aura deviné un, mais cela ne signifie pas que le signe a été enregistré dans sa liste. Rien n'est fait tant que vous n'avez pas appuyé sur le bouton **Insertion**.
+
+Sauf lorsque vous créez des signes qui sont déjà documentés dans le Manuel de Codage (par exemple, parce qu'ils ne sont pas disponibles dans JSesh), vous devez d'abord obtenir un identifiant d'utilisateur (UID), qui différenciera vos signes des signes créés par d'autres utilisateurs.
+
+Pour obtenir un UID, enregistrez-vous en tant qu'utilisateur JSesh. Remarque pour les utilisateurs de tksesh : l'UID est simplement votre identifiant tksesh.
+
+Soyez prudent lorsque vous donnez un nom aux signes. Si vous souhaitez que vos fichiers soient lisibles par n'importe qui, soyez donc fidèles au "Manuel de codage". Nos suggestions actuelles sont les suivantes :
+
+  * Si vous créez votre propre version d'un signe dans le Manuel (soit parce qu'il n'est pas encore disponible dans JSesh, soit parce que vous n'aimez pas le signe par défaut fourni, utilisez soit le Manuel de codage standard pour le signe, ou utilisez le notation suivante : **USuid + code Gardiner**, où uid est l'identifiant de l'utilisateur.
+  * Lorsque vous créez un signe que vous considérez comme une variante d'un signe standard, vous devez construire son nom comme ceci : **USuid + Code Gardiner + "VAR" + CODE VARIANT** où : Code Gardiner est le code standard du Manuel de codage pour le signe de base et VARIANT CODE est généralement une lettre majuscule. La forme ramesside habituelle du lièvre a une queue d'animal Seth. Si je veux le distinguer du signe "normal", je peux l'appeler US1E34VARA.
+  * Lorsque le signe que vous créez correspond à un signe entièrement nouveau, donnez-lui un code de la forme : USuid+Catégorie Gardiner + NUMERO +"XT"+CODE VARIANT OPTIONNEL. \\ Vous êtes libre de choisir le numéro qui vous convient, mais je vous suggère d'essayer de trouver une disposition logique. Il serait également préférable que ce numéro ne corresponde pas à un signe "standard" (pour éviter d'induire en erreur les innocents utilisateurs d'autres logiciels), Vous pouvez donc par exemple commencer votre numérotation à 1000. Notez également que le numéro ne doit pas contenir de zéros non significatifs. La catégorie doit être correcte, et si vous n'en avez vraiment aucune idée, vous devez utiliser la catégorie Aa. "Ff" est réservé aux signes utilisés spécifiquement pour la transcription hiératique. \\ Exemple : la Harpe Louvre E 116 A vient d'être publiée par C. Barbotin (La voix des hiéroglyphes, p. 66-67), et dans son texte figure le signe inconnu {{:doc:fr:usaa1000xt.png|}}. Je peux créer ce signe et lui donner, par exemple, le code US1Aa1000XT. D'autre part, la stèle d'Israël contient un signe qui est très probablement un griffon, mais ne correspond à aucun signe de griffon enregistré dans le manuel. Donc je lui ai donné le code US1E162VARA, car E162 est un signe de griffon.
+  * Utilisation de ce système lors de l'import de textes depuis d'autres logiciels : il est possible que d'autres logiciels fournissent leurs propres codes « non standard ». Si vous souhaitez importer des textes de ces logiciels dans JSesh, vous devrez peut-être donner un nom aux nouveaux signes qu'ils contiennent (notez que les polices sont généralement protégées par les lois sur le droit d'auteur, vous devrez donc redessiner les signes vous-même, soit en adaptant les signes JSesh ou en trouvant une image des signes dans les sources hiéroglyphiques originales). Pour des raisons de compatibilité, les codes utilisateurs suivants peuvent être utilisés pour d'autres logiciels : winglyph 1000, macscribe 1001, inscribe 1002, got 1003, visualglyph 1004. Si vous pensez à d'autres logiciels que je devrais ajouter à cette liste, dites-le moi.
+  * code standard du manuel de codage. Vous trouverez ces codes dans le dictionnaire de Hannig (1995), par exemple. Un certain nombre de listes sont également disponibles sur le Web. Veuillez noter que l'utilisation des codes est une chose, mais que les signes réels dessinés dans les polices d'autres logiciels sont protégés par la loi sur le copyright. Donc, vous devez venir avec vos propres versions des signes, soit à partir de sources réelles, soit en les recréant. Vous trouverez plus d'informations sur le dessin des signes dans la section suivante. Dans notre exemple, votre canard remplacerait le canard normal, il aurait donc le code "G39".
+Nous suggérons que, si vous créez un signe avec un code Gardiner "normal", vous lui donnez également un code de signe utilisateur. De cette façon, vous serez sûr de le conserver même si un signe avec ce code Gardiner est ajouté ultérieurement au logiciel.
+
+Notez que pour la compatibilité avec tksesh, nous prenons également en charge les "codes de glyphes utilisateur" arbitraires. Ces codes correspondent aux codes que tksesh a donnés aux nouveaux signes. Les codes de glyphes utilisateur ont la forme UG id M mid N sid , où id, mid et sid sont des nombres. Évitez d'utiliser ces codes pour le moment.
+
+
+{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/importSigns5.png |Insertion du signe du canard comme UG1M2N0}}
+
+Lorsque votre signe est prêt, cliquez sur le bouton **Insertion**.
+
+==== Système alternatif pour l'insertion de signe ====
+
+Si votre fichier SVG de signes a un nom qui correspond à un code (disons, US1A1VARA.svg) et que le module quadrant est soit 18px ou 1800px, alors vous pouvez simplement mettre le signe dans votre dossier de hiéroglyphes.

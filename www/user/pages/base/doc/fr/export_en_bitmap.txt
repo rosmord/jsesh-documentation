@@ -1,0 +1,10 @@
+====== Export en JPEG ou PNG ======
+
+
+Les images sur les ordinateurs se présentent sous deux formes : *images bitmap* et *images vectorielles*. Pour avoir une idée rapide des différences, disons que les fichiers bitmap sont généralement édités avec des logiciels comme Photoshop (ou Gimp si vous utilisez un logiciel gratuit), et les images vectorielles sont éditées à l'aide de logiciels comme Adobe Illustrator (ou Inkscape). La plupart des logiciels peuvent afficher et lire des fichiers bitmap, ces fichiers ont donc tendance à être plus faciles à partager. Leur principal problème est que vous ne pouvez pas bien zoomer dessus. Un fichier bitmap adapté à l'affichage à l'écran s'imprimera probablement mal. Cependant, le partage d'images vectorielles est assez difficile (sans raison valable, mais c'est une triste constatation), vous aurez donc intérêt à utiliser plutôt des bitmaps haute résolution pour l'impression.
+
+
+Pour exporter un fichier bitmap (JPEG ou PNG), choisissez l'entrée de menu "Fichier/Exporter/Exporter comme JPEG ou PNG".
+
+
+Vous pouvez exporter une version JPEG ou PNG((Sachez que les fichiers PNG ont une meilleure résolution que les fichiers JPEG car leur taux de compression est inférieur, ce qui augmente leur qualité, notamment dans le rendu de la couleur rouge. Un fichier PNG gère aussi la transparence, ce qu'un JPEG ne sait pas faire (Note du traducteur).)) de votre texte. Si aucun texte n'est sélectionné, le texte entier sera rendu. S'il y a une sélection, seul le texte sélectionné sera dessiné.
