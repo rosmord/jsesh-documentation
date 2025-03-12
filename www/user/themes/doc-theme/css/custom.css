@@ -2,3 +2,15 @@
     color: rgb(22, 148, 202);
     font-size: xxx-large;
 }
+
+#body img.inline {display: inline; margin: auto; }
+
+
+figure.image-caption figcaption {
+    opacity: 1.0!important;
+    font-size: 140%!important;
+}
+
+#body figure.image-caption img {
+    margin-bottom: 0.5rem;
+}

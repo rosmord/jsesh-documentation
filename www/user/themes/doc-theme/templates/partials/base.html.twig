@@ -41,6 +41,11 @@
   {% endblock %}
 
 {% endblock head %}
+
+<!-- hieroglyphic parser... -->
+<script src="https://files.qenherkhopeshef.org/jsjsesh/js/mdcParser.js"></script>
+<script src="https://files.qenherkhopeshef.org/jsjsesh/js/mdcUtilsTer.js"></script>
+
 </head>
 <body class="searchbox-hidden {{ page.header.body_classes }}" data-url="{{ page.route }}">
     {% block sidebar %}
@@ -101,5 +106,30 @@
     {% block bottom %}
         {{ assets.js('bottom')|raw }}
     {% endblock %}
+
+
+<!-- 
+    This is a TEMPORARY solution for having glyphs in JSesh web site.
+    (ok, it has been so for 10 years)
+-->
+    <script>
+        // TODO : replace this with a cleaner alternative
+        hieroglyphicSource = "https://files.qenherkhopeshef.org/jsjsesh/images/glyphs"
+
+        function replaceAllGlyphs() {
+            document.querySelectorAll(".mdc").forEach(
+                    function (elt) {
+                        try {
+                            replaceTextWithHieroglyphs(elt, {scale: 1.5});
+                        } catch (e) {
+                            console.log(e);
+                        }
+                    }
+            );
+        }
+        replaceAllGlyphs();
+    </script>
+
+
  </body>
 </html>

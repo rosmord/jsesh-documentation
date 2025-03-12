@@ -15,7 +15,8 @@ languages:
     es: ['en']
 pages:
   theme: doc-theme
-  markdown_extra: true
+  markdown:
+    extra: true
   process:
     markdown: true
     twig: false
