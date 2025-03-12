@@ -1,7 +1,0 @@
-====== Overview of the JSesh Window ======
-(pre-5.4 version)
-
-{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/Capture.img_assist_custom.png |The jsesh window}}
-
-Currently, JSesh's working space contains a menu, a main editing window (the "hieroglyphic window" above), and a number of fields. The field termed "Manuel de Codage field" contains the Manuel de codage code for the current line of text (the one pointed by the cursor). You can modify directly this code ; the field termed "current sign code" is used in interractive editing to show the code for the currently edited text.
-the field directly right to it is a message field. It isn't of much use currently.

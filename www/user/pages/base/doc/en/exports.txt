@@ -1,9 +1,0 @@
-====== Graphical export ======
-
-
-  * [[copy_paste|Copy/Paste]]
-  * [[printing|Printing]]
-  * [[export_pdf|Exporting PDF]]
-  * [[export_bitmap|Exporting JPEG and PNG Pictures]]
-  * [[export_rtf|Exporting RTF]]
-  * [[word_processor_issues|Word processors specific issues]]

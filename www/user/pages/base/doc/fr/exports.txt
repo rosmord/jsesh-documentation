@@ -1,8 +1,0 @@
-====== Exportation des graphiques ======
-
-  * [[copier_coller|Copier/Coller]]
-  * [[imprimer|Impression]]
-  * [[export_en_pdf|Export en PDF]]
-  * [[export_en_bitmap|Export en JPEG ou PNG]]
-  * [[export_en_rtf|Export en RTF]]
-  * [[problemes_avec_word|Problèmes spécifiques aux traitement de textes]]

@@ -1,4 +1,0 @@
-====== Printing ======
-
-
-Currently, printing doesn't work, and is *not* a priority. Use PDF or SVG export instead, and print from Acrobat Reader or Inkscape.
