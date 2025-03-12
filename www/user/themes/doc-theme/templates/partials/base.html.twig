@@ -53,6 +53,7 @@
         <div id="header-wrapper">
             <div id="header">
                 <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}">{% include 'partials/logo.html.twig' %}</a>
+                {% include 'partials/language-selector.html.twig' %}
                 {% include 'partials/search.html.twig' %}
             </div>
         </div>

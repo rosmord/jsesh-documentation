@@ -4,8 +4,7 @@ home:
 languages:
   supported:
     - fr
-    - en
-    - ja
+    - en    
     - es
   default_lang: en
   content_fallback:
