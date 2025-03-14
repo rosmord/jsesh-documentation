@@ -5,9 +5,11 @@ taxonomy:
 ---
 Ceci est la documentation utilisateur de JSesh. Elle sera disponible en plusieurs langues :
 
-- Espagnol
-- Anglais
-- Français
+- [Espagnol](/../es/)
+- [Anglais](/../en/)
+- [Français](/../fr)
+
+
 
 D'autres versions sont disponibles en tant que ressources externes, notamment une version [japonaise](/othertranslations/japanese).
 

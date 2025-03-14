@@ -6,9 +6,9 @@ taxonomy:
 
 This is the JSesh user documentation. It will available in a number of languages :
 
-- Spanish
-- English
-- French
+- [Spanish](/../es)
+- [English](/../en)
+- [French](/../fr)
 
 Other versions are available as external ressources, notably a Japanese version.
 
