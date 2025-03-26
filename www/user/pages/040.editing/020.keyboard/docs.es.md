@@ -1,5 +1,6 @@
 ---
 title: Editar con el teclado
+author: Martí Blesa
 taxonomy:
     category: docs
     tag: []

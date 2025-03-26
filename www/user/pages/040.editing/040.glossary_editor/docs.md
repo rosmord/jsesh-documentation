@@ -11,12 +11,12 @@ Here is what you need to do:
 type the text for the group you want.
 select it, and call "Edit/Add Selection to glossary"
 
-![Adding selection to the glossary](./glossaryA.png)
+![Adding selection to the glossary](./glossaryA.png?classes=caption "Adding selection to the glossary")
 
 
-the glossary editor window opens, and all you need to do is to type the code you want to use, and then push the "add" button. 
+the glossary editor window opens, and all you need to do is to type the code you want to use, and then push the "add" button. Note that the code must not contain spaces nor hyphens - it would not be possible to use it in this case.
 
-![The Glossary Editor](./glossaryB.png)
+![The Glossary Editor](./glossaryB.png?classes=caption "The Glossary Editor")
 
 as soon as the group has been added, you can insert it by typing its code, just like you type the code of a sign.
 In this precise case, as we used "pA" as code, and "pA" allows to type G41 and G40, the space bar will allow you to cycle through all solutions.

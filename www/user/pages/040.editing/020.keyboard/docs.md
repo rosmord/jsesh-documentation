@@ -67,10 +67,10 @@ The sign you type when validating can be used to group the hieroglyphs. Both 'sp
 
 If no code has been entered (that is, if the code window is entered), the previous grouping sign type will group the last two cadrats. It looks a bit strange, but you will see that it's quite natural. you can use it to group signs as an afterthough. Actually, it was a behaviour I unexpectly got when writing TkSesh, and that I have kept, as I found it useful.
 
-## *Exempli gratia*
+### *Exempli gratia*
 
 
 If you want to type the word <span class="mdc">p*t:pt</span>, you can :
 
 * type 'p', then '`*`', 't', '`:`', 'pt'
-* type 'p', 't', then '`*`', ''space'' (which kind of validates the '`*`'), pt, '`:`', and ''space''.
+* type 'p', 't', then '`*`', `space` (which kind of validates the '`*`'), pt, '`:`', and `space`.

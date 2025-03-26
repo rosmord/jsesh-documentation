@@ -1,5 +1,6 @@
 ---
 title: Editar con el ratón
+author: Martí Blesa
 taxonomy:
     category: docs
 ---

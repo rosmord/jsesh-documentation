@@ -1,5 +1,6 @@
 ---
 title: La ventana de JSesh
+author: Martí Blesa
 taxonomy:
     category: docs
     tag: []
