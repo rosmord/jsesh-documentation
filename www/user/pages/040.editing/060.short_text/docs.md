@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-It's quite usual to add small remarks, like "tr" or "sic", or footnote references, like "(a)", in hieroglyphic texts. To do this in JSesh, use the menu entry "Edit/insert short text".
+It's quite usual to add small remarks, like “tr”  or “sic” , or footnote references, like “(a)” , in hieroglyphic texts. To do this in JSesh, use the menu entry `Insert/short text`.
 
 Now, the text you type will behave just like a hieroglyphic sign. It will have a certain size, 
 but it can be part of a ligature or a group, which allows you to avoid disturbing the other signs layout.
