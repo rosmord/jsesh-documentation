@@ -25,11 +25,16 @@ To write a translation of the documentation, you need to create `.md` files, as 
 | stp_n_ra2.png   | a picture used by those pages |
 | w_and_t.png     | a picture used by those pages |
 
+
+`.es` and `.fr` are codes for the language used. You can find them in the [description of ISO 639](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes).
+
+
 If we look at `docs.md`, we see 
 
 ~~~markdown
 ---
 title: Mouse Editing // the title of the page, which should be translated
+author:... if you translate, you can put your name here...
 taxonomy:
     category: docs
 ---
@@ -49,6 +54,48 @@ a picture :
 
 ~~~
 
+Markdown is fairly straightforward. You can use the existing documentation as a guideline. In general, if you are translating the documentation, you will use the same structure as the existing documentation, so you can:
+
+- copy the file you want to translate, adding the correct language code to it :
+  ~~~
+    cp docs.md docs.fr.md
+  ~~~
+
+- edit your new file, replacing the original text with its translation.
+
+You might want to translate some of the pictures. It's quite easy. Simple create a new picture with the translated content.
+
+Then in the markdown file, replace the name of the original picture with the translated one.
+
+
+## Markdown enhancement for this site
+
+This site allows you to :
+
+- add captions to pictures like this:
+  ~~~markdown
+  ![](./tagEditor.png?classes=caption "The Tag Creation Window")
+  ~~~
+
+  You need to add `?classes=caption` after the picture name, then the caption itself, between quotes.
+
+- use inline pictures. Normally, pictures will occur on a line of their own. If you want them to be part of the text, use `classes=inline` : 
+
+  ~~~markdown
+  ![](./importSigns3.png?classes=inline)
+  ~~~
+
+- use a simplified version of the *Manuel de Codage* to quote hieroglyphic texts. You need to write a `<span>` with class `mdc`:
+
+  ~~~markdown
+  It can be understood as a ligature between the sign <span class="mdc">F20</span> and the group <span class="mdc">xAst:xAst:xAst</span>.
+  ~~~
+
+Note that `*` has a special meaning for markdown, and that you might need to put a `\` in front of them:
+
+~~~markdown
+ <span class='mdc'>p\*t:pt</span>
+~~~
 
 ## Running a local copy of the documentation
 
