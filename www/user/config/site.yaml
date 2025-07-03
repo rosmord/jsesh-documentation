@@ -4,7 +4,7 @@ metadata:
 author:
   name: Serge Rosmorduc
   email: 'serge.rosmorduc@qenherkhopeshef.org'
-taxonomies: [category,tag]
+taxonomies: [category,tag,author]
 summary:
   size: 300
 

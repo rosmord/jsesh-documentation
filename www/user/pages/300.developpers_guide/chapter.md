@@ -1,5 +1,5 @@
 ---
-title: Developper's guide
+title: Appendix C: developper's guide
 taxonomy:
     category: docs
 ---
