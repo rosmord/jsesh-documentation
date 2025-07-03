@@ -1,6 +1,5 @@
 # Keep grav folders
 # Grav Specific
-www/bin
 www/cache/*
 www/logs/*
 www/.sass-cache
@@ -26,6 +25,5 @@ www/CODE_OF_CONDUCT.md
 www/CONTRIBUTING.md
 www/LICENSE.txt
 www/README.md
-www/bin/*
 www/webserver-configs/*
 .vscode/
