@@ -26,6 +26,8 @@ cache:
     method: file
   driver: auto
   prefix: 'g'
+  purge_at: '0 4 * * 1'
+  clear_at: '0 3 * * 1'
 
 twig:
   cache: true
