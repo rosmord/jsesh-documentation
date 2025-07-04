@@ -97,6 +97,13 @@ Note that `*` has a special meaning for markdown, and that you might need to put
  <span class='mdc'>p\*t:pt</span>
 ~~~
 
+
+## Where are the files ?
+
+All the files you might need to edit or copy are in `www/user/pages`.
+
+Some of them are called `chapter.md`, and others `docs.md`.
+
 ## Running a local copy of the documentation
 
 If you want to provide a translation for your own language, the pages are in `user/pages`. Look for the files ending in `.md`. To translate a file, simply create, at the same place, a file with the same name, but with ending `.LANG.md`, where LANG is the code for your language. You can ask me if you want.
