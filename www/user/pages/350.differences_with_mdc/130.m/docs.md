@@ -1,8 +1,7 @@
 ---
-title: M: Trees and plants
+title: M - Trees and plants
 taxonomy:
     category: docs
-    tag: []
 ---
 
 - <span class='mdc'>M3A</span> **M3A**. We have used the code `M3A` according to Inscribe and to Gardiner, *Supplement to the Catalogue of the Egyptian Hieroglyphic Printing Type, Showing Acquisitions to December 1953,* p. 4. In the hieroglyphica, this code is used for <span class='mdc'>M3G</span>. 

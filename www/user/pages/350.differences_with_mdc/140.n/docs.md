@@ -2,7 +2,6 @@
 title: N - Sky, earth, water
 taxonomy:
     category: docs
-    tag: []
 ---
 
 ![](N104.png?classes=inline) **N104**

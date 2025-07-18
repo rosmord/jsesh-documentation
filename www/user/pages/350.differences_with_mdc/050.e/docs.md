@@ -1,8 +1,7 @@
 ---
-title: E: Mammals
+title: E - Mammals
 taxonomy:
     category: docs
-    tag: []
 ---
 
 - <span class='mdc'>E31</span> JSesh uses the original Gardiner shape and description. The goat is wearing a seal, not an *ꜥnḫ* sign (which is the shape chosen in the Hieroglyphica).

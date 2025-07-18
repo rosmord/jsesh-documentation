@@ -2,7 +2,6 @@
 title: Introduction
 taxonomy:
     category: docs
-    tag: []
 ---
 
 With a font comprising around 7,000 signs, occasional errors are, unfortunately, inevitable. For various reasons—legal among them—the font included with JSesh cannot simply reproduce the Winglyph or Macscribe fonts.
