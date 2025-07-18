@@ -15,7 +15,11 @@ About fonts evolutions: the current fonts don't clearly differentiate between th
 
 - first, the original Winglyph, which was mostly limited to the Gardiner font, used the shape  <span class='mdc'>E31B</span> for E31. It wasn't a problem. The sign was the only one available for E31 and variants, which means that using it did not suppose this particular variant of the sign was meant to be in the original text. 
 - when extending the library, the need arose to differentiate  <span class='mdc'>E31B</span> and <span class='mdc'>E31</span>, leading to the addition of E187
-- the problem is that everyone encoding texts before that, or limiting himself to the Gardiner set, was using the code E31.
+- the problem is that everyone encoding texts before that, or limiting himself to the Gardiner set, was using the code E31, which means that texts using E31, typed with the Hieroglyphica signs, might:
+  - have been created by colleagues thinking in terms of sign values, not caring about the exact variant, maybe even with the “standard”  shape in mind;
+  - have been typed by searchers who care about the distinction <span class='mdc'>E31</span>/<span class='mdc'>E31B</span> - which is probably a diachronic problem;
+  - have been typed by colleagues who had access only to the Gardiner set, but who would have cared.
+- in any case, except for corpora which were developped with strict encoding rules, it would make any attempt to compute statistics or date the texts according to their sign shapes irrelevant.
 
 This situation can be a bit problematic with text databases. It's also struturally anavoidable if we don't have the distinction between various level of encoding.
 
