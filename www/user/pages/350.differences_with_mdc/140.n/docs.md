@@ -1,5 +1,5 @@
 ---
-title: N: Sky, earth, water
+title: N - Sky, earth, water
 taxonomy:
     category: docs
     tag: []
