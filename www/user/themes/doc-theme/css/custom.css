@@ -3,14 +3,76 @@
     font-size: xxx-large;
 }
 
-#body img.inline {display: inline; margin: auto; }
+#body img.inline {
+    display: inline;
+    margin: auto;
+}
 
 
 figure.image-caption figcaption {
-    opacity: 1.0!important;
-    font-size: 140%!important;
+    opacity: 1.0 !important;
+    font-size: 140% !important;
 }
 
 #body figure.image-caption img {
     margin-bottom: 0.5rem;
 }
+
+
+
+.searchboxmod {
+    background: #1383b3;
+    display: flex;
+    margin-top: 0.5rem;
+    border: 1px solid #19a5e1;
+    border-radius: 4px;
+    
+}
+
+.searchboxmod label {
+    color: rgba(255, 255, 255, 0.8);
+   padding: 3pt 3pt 2pt 2pt;
+}
+
+.searchboxmod span {
+    color: rgba(255, 255, 255, 0.6);
+    right: 10px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.searchboxmod span:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.searchboxmod input {
+    display: inline-block;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    padding: 0 25px 0 30px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.searchboxmod .fa-close {
+    padding: 3pt 3pt 2pt 2pt;
+}
+.searchboxmod input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.searchboxmod input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.searchboxmod input:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.searchboxmod input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
