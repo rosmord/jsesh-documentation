@@ -1,7 +1,5 @@
 # JSesh documentation web site
 
-(just a test...)
-
 The old JSesh documentation site used dokuwiki, which is a very nice piece of software, but is not very easy to maintain.
 
 I have decided to move most of my code to [grav](https://getgrav.org/), which I feel will be easier for me to work with (it has fewer security issues as I won't have editing features).
@@ -115,3 +113,33 @@ If you want to provide a translation for your own language, the pages are in `us
 cd www
 ./bin/grav serve
 ~~~
+
+## How to send me your modifications?
+
+There are two approaches. One is relatively *low-tech*, the other requires some knowledge of `git`.
+
+### Low-tech approach
+
+The low-tech approach is the following:
+
+- you download a copy of the JSesh documentation sources. The easiest way is to click on the green button labelled `code`, and select *Download zip*
+- you create/edit/... the files you want to change;
+- you create a **zip** archive of your text and you send it to me. It's important to keep the initial file layout. You can either zip the whole folder for the documentation, or only the folder called `pages` in `www/user/`.
+
+### High-tech approach
+
+You need to create a **github** account.
+
+- log on your github account;
+- visit https://github.com/rosmord/jsesh-documentation
+- click on the **fork** button
+- you now have your own copy of the documentation, which you can save to github with **git push** (or event edit online).
+- when you look at your personnal github archive - in your web browser, you will see something like:
+
+  ~~~
+  This branch is 1 commit ahead of rosmord/jsesh-documentation:master. .... Contribute
+  ~~~
+
+  Click on the **Contribute** button to send your modifications for proofreading to my archive.
+
+  
