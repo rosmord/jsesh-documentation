@@ -1,19 +1,19 @@
 ---
-title: Credits for translations
+title: Ringraziamenti per le traduzioni
 taxonomy:
     category: docs
 process:
     twig: true
 ---
 
-**Spanish version**
+**Spagnolo (Castigliano)**
 : Martí Blesa
 
-**English version**
+**Versione Inglese**
 : Serge Rosmorduc
 
-**French version**
+**versione Francese**
 :  Bertrand Gajeot, Didier Morandi, Serge Rosmorduc
 
-**Italian Translation**
+**versione Italiana**
 :  Leo Gentilini

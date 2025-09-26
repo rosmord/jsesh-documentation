@@ -9,6 +9,8 @@ This is the JSesh user documentation. It will available in a number of languages
 - [Spanish](/../es)
 - [English](/../en)
 - [French](/../fr)
+- [Italian](/../it)
+
 
 Other versions are available as external ressources, notably a Japanese version.
 

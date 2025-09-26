@@ -1,7 +1,5 @@
 ---
-title: N - Sky, earth, water
-taxonomy:
-    category: docs
+title: 'N - Sky, earth, water'
 ---
 
 ![](N104.png?classes=inline) **N104**

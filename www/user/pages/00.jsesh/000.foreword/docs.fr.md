@@ -8,7 +8,7 @@ Ceci est la documentation utilisateur de JSesh. Elle sera disponible en plusieur
 - [Espagnol](/../es/)
 - [Anglais](/../en/)
 - [Français](/../fr)
-
+- [Italien](/../it)
 
 
 D'autres versions sont disponibles en tant que ressources externes, notamment une version [japonaise](/othertranslations/japanese).

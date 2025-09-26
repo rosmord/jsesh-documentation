@@ -6,12 +6,14 @@ languages:
     - fr
     - en    
     - es
+    - it
   default_lang: en
   content_fallback:
     en: [] 
     fr: ['en']
     ja: ['en']
     es: ['en']
+    it: ['en']
 pages:
   theme: doc-theme
   markdown:
