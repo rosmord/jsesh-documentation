@@ -21,7 +21,7 @@ But, to tell the whole story:
 * MacScribe is able to shade quarter of individual signs. In MacScribe, "`p##13*p:pt`" would have the "p" sign half shaded. A variant of this system is understood by JSesh. The external [MacScribe converter](https://jsesh.qenherkhopeshef.org/software/MacScribeImporter.zip) software understands this.
 * A "free" shading system would be nice too. In this case, the outline of the shaded zone would be freely drawn. I plan to add it too (taking advantage of the group editor). But currently, if you need to be that precise, the only option JSesh gives you is to export your file in some convenient format (for instance SVG) and to modify it there.
 
-## Shading part of a quadrant
+## Shading part of a quadrat
 
 The menu entry in Text Manipulation/Shading can apply to a selection. That is, you can shade the top part of all groups in a selection in one operation (previously, you had to shade each group individually).
 

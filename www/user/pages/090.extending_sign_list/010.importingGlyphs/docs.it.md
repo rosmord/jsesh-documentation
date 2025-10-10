@@ -67,9 +67,9 @@ Si noti che, per compatibilità con tksesh, supportiamo anche "codici glifi uten
 
 ## Simboli pronti per JSesh
 
-Il modo più semplice per aggiungere simboli alla tua libreria è creare file SVG delle dimensioni corrette. Dovresti usare una dimensione per l'intero quadrante di 1800px x 1800px. Naturalmente, l'immagine potrebbe essere più piccola se il glifo non occupa un intero quadrante.
+Il modo più semplice per aggiungere simboli alla tua libreria è creare file SVG delle dimensioni corrette. Dovresti usare una dimensione per l'intero quadrate di 1800px x 1800px. Naturalmente, l'immagine potrebbe essere più piccola se il glifo non occupa un intero quadrate.
 
-JSesh può anche usare simboli con una dimensione base del quadrante di 18px, ma ti consiglio di evitarlo.
+JSesh può anche usare simboli con una dimensione base del quadrate di 18px, ma ti consiglio di evitarlo.
 
 Il tuo file SVG dovrebbe avere un nome che corrisponda a un codice (ad esempio, `US1A1VARA.svg`).
 

@@ -27,7 +27,7 @@ Cercare testo geroglifico può essere abbastanza semplice. Digita il testo che s
 ![Ricerca semplice](finddialog1.png)
 
 Per impostazione predefinita, la ricerca cercherà *sequenze* di segni, indipendentemente dal loro layout. Se si desidera cercare
-un layout specifico, selezionare la casella **Corrispondenza intero quadrante**.
+un layout specifico, selezionare la casella **Corrispondenza intero quadrate**.
 
 ## Ricerca avanzata per testo geroglifico
 

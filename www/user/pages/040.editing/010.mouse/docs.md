@@ -91,7 +91,7 @@ To select a zone of text, you can use a number of ways :
 
 ## Grouping signs
 
-This is done using the "Text manipulation" menu. You can group signs into vertical or horizontal groups, by selecting the signs (or quadrants), and choosing either "group horizontal" or "group vertical". Note that you can break the groups with the menu "explode group". All kinds of groups can be "exploded".
+This is done using the "Text manipulation" menu. You can group signs into vertical or horizontal groups, by selecting the signs (or quadrats), and choosing either "group horizontal" or "group vertical". Note that you can break the groups with the menu "explode group". All kinds of groups can be "exploded".
 
 "Group Horizontal" has the keyboard shortcut "Ctrl-h"
 
@@ -100,7 +100,7 @@ This is done using the "Text manipulation" menu. You can group signs into vertic
 ## Ligatures
 
 
-JSesh knows a number of “special groups” , or ligatures, which are beyond the capabilities of "square" quadrants. For instance, "w" and "t" will likely be arrange like that: ![](w_and_t.png?classes=inline). To achieve such a layout, select the signs you want to ligature, and use the menu Text manipulation/Ligature elements.
+JSesh knows a number of “special groups” , or ligatures, which are beyond the capabilities of "square" quadrats. For instance, "w" and "t" will likely be arrange like that: ![](w_and_t.png?classes=inline). To achieve such a layout, select the signs you want to ligature, and use the menu Text manipulation/Ligature elements.
 
 However, JSesh doesn't know how to ligature all groups, even though it knows some rather "sportive" ones: ligaturing 
 ![](stp_n_ra1.png?classes=inline) gives ![](stp_n_ra2.png?classes=inline).

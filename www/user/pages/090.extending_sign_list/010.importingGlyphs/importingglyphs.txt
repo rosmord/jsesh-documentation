@@ -70,4 +70,4 @@ Lorsque votre signe est prêt, cliquez sur le bouton **Insertion**.
 
 ==== Système alternatif pour l'insertion de signe ====
 
-Si votre fichier SVG de signes a un nom qui correspond à un code (disons, US1A1VARA.svg) et que le module quadrant est soit 18px ou 1800px, alors vous pouvez simplement mettre le signe dans votre dossier de hiéroglyphes.
+Si votre fichier SVG de signes a un nom qui correspond à un code (disons, US1A1VARA.svg) et que le module quadrat est soit 18px ou 1800px, alors vous pouvez simplement mettre le signe dans votre dossier de hiéroglyphes.

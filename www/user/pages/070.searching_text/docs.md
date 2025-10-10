@@ -28,7 +28,7 @@ Searching for hieroglyphic text can be quite simple. Type the text you are looki
 ![Simple search](finddialog1.png)
 
 By default, the search will look for *sequences* of signs, regardless of their layout. If you want to search
-for a specific layout, check the **Whole Quadrant Match** box.
+for a specific layout, check the **Whole quadrat Match** box.
 
 ## Advanced Search for Hieroglyphic Text
 

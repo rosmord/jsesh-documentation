@@ -68,9 +68,9 @@ Note that for compatibility with tksesh, we also support arbitrary "user glyph c
 
 ## JSesh-ready signs
 
-The simplest way to add signs to your library is to create SVG files with the right size. You should use a dimension for the whole quadrant of 1800px x 1800px. Of course, the picture might be smaller if the glyph does not occupy a whole quadrant.
+The simplest way to add signs to your library is to create SVG files with the right size. You should use a dimension for the whole quadrat of 1800px x 1800px. Of course, the picture might be smaller if the glyph does not occupy a whole quadrat.
 
-JSesh can also use signs with a base quadrant size of 18px, but I'd suggest avoiding it.
+JSesh can also use signs with a base quadrat size of 18px, but I'd suggest avoiding it.
 
 Your SVG file should have a name which corresponds to a code (say, `US1A1VARA.svg`). 
 

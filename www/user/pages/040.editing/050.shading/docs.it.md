@@ -21,7 +21,7 @@ Ma, per dirla tutta:
 * MacScribe è in grado di ombreggiare un quarto di singoli segni. In MacScribe, "`p##13*p:pt`" avrebbe ombreggiato a metà il segno "p". Una variante di questo sistema è supportata da JSesh. Il software esterno [MacScribe converter](https://jsesh.qenherkhopeshef.org/software/MacScribeImporter.zip) lo supporta.
 * Anche un sistema di ombreggiatura "libero" sarebbe utile. In questo caso, il contorno della zona ombreggiata verrebbe disegnato liberamente. Ho intenzione di aggiungerlo (sfruttando l'editor di gruppi). Ma al momento, se hai bisogno di essere così preciso, l'unica opzione che JSesh ti offre è quella di esportare il tuo file in un formato comodo (ad esempio SVG) e modificarlo lì.
 
-## Ombreggiatura di una parte di un quadrante
+## Ombreggiatura di una parte di un quadrate
 
 La voce di menu in Manipolazione/Ombreggiatura del testo può essere applicata a una selezione. In altre parole, è possibile ombreggiare la parte superiore di tutti i gruppi di una selezione in un'unica operazione (in precedenza, era necessario ombreggiare ogni gruppo singolarmente).
 
