@@ -54,4 +54,22 @@ There is also a list of the modifications at the *glyph* level, with possibly an
 You need to install both version of JSesh first. Then, in the “old” version, you look for a file called `jseshGlyphs-(VERSION NUMBER).jar`. It contains the glyphs of this version of JSesh. Copy it, rename it to `jseshGlyphs-(VERSION NUMBER).zip`, and **unzip** it. You will find the glyphs there as SVG files in a folder. Simply  select this folder as your personnal glyph folder, and, *voilà*, you are back to this version of JSesh as far as fonts are concerned.
 
 
+## Are new Signs a Problem?
+
+At first sight, a font with a new sign is not a problem... however, it's not that simple, in particular if you deal with **text databases**.
+
+For instance, looking at palaeographies, I saw that in most cases, the E1 sign, when it means *cattle* *ꞽḥ.w, mnmn.t...* has lyra-shaped horns. It's rather well documented. Gardiner choosed to have a more generic E1 sign, which can also be used for bull, *kꜣ*.
+
+In a modification of JSesh 7.9, I intend to propose:
+
+- ![](./E1.png?classes=inline) the “old” version of the sign, which corresponds to the Gardiner shape (perhaps with slighly shorter horns);
+- ![](./E1x.png?classes=inline) the version with lyra-shaped horns, more usual in offering lists.
+
+
+The problem of adding a new variant of a sign is the following: texts which have been already encoded, and whose original **might** feature the new variant, use the old code. It doesn't make them unreadable, or incorrect in isolation, but it you want to compute statistics, for instance, you won't find all `*real*` occurrences of your sign.
+
+This being said, I'm afraid that creating a large database of texts, accurate at the **sign** level, is almost impossible, because of the human factor. It will require an very strict encoding and proofreading discipline.
+
+At the same time, I would like to be wrong there, and I dream of a system which could tell you when a particular variant of a sign is attested.
+
 
