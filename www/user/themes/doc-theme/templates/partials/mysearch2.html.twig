@@ -1,0 +1,20 @@
+{% set min_chars = config.get('plugins.simplesearch.min_query_length', 3) %}
+<div class="searchboxmod">
+    <form name="search" data-simplesearch-form>
+        <label for="search-by"><i class="fa fa-search"></i></label>
+        <input
+            name="searchfield"
+            id="search-by"
+            aria-label="search"
+            type="text"
+            {% if min_chars > 0 %} data-min="{{- min_chars -}}" {% endif %}
+            required
+            placeholder="{{"PLUGIN_SIMPLESEARCH.SEARCH_PLACEHOLDER"|t}}"
+            value="{{ query|e }}"
+            data-search-invalid="{{ "PLUGIN_SIMPLESEARCH.SEARCH_FIELD_MINIMUM_CHARACTERS"|t(min_chars)|raw }}"
+            data-search-separator="{{ config.system.param_sep }}"
+            data-search-input="{{ base_url }}{{ config.plugins.simplesearch.route == '@self' ? '' : (config.plugins.simplesearch.route == '/' ? '' : config.plugins.simplesearch.route) }}/query"
+        />
+        <span data-search-clear><i class="fa fa-close"></i></span>
+    </form>
+</div>

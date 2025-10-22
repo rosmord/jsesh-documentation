@@ -22,11 +22,14 @@ figure.image-caption figcaption {
 
 .searchboxmod {
     background: #1383b3;
-    display: flex;
     margin-top: 0.5rem;
     border: 1px solid #19a5e1;
     border-radius: 4px;
     
+}
+
+.searchboxmod form {
+    display: flex;
 }
 
 .searchboxmod label {
