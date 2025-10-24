@@ -23,7 +23,7 @@ Now, JSesh will propose a number of different *formats* to your word processor, 
 I do most of my testing with **open office** and **libre office**. They are not perfect, but they tend to process pictures and unicode correctly, so I strongly encourage their use. Their files tend to be very portable from one computer to the other. No problem of different versions of the word processor there.
 
 
-![Format choice dialog](http://jsesh.qenherkhopeshef.org/files_jsesh/images/formatChoice.img_assist_custom.png?classes=caption "Format choice dialog")
+![Format choice dialog](formatChoice.img_assist_custom.png?classes=caption "Format choice dialog")
 
 
 
