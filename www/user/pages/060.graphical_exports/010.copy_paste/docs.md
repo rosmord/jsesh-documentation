@@ -39,7 +39,7 @@ bitmap
 plain text
 : will copy the *Manuel de Codage* encoding to the clipboard.
 
-For information specific to **your** word processor, see the chapter on [[word_processor_issues|word processors issues]]
+For information specific to **your** word processor, see the chapter on [word processors issues](https://jseshdoc.qenherkhopeshef.org/en/graphical_exports/word_processors)
 
 ### Fine settings
 
