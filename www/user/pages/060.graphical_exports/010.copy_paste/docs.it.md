@@ -20,7 +20,7 @@ Ora, JSesh proporrà diversi *formati* al tuo elaboratore di testi, lasciandogli
 
 Eseguo la maggior parte dei miei test con **Open Office** e **Libre Office**. Non sono perfetti, ma tendono a elaborare correttamente immagini e Unicode, quindi ne consiglio vivamente l'uso. I loro file tendono ad essere facilmente trasferibili da un computer all'altro. Nessun problema con le diverse versioni dell'elaboratore di testi.
 
-{{ http://jsesh.qenherkhopeshef.org/files_jsesh/images/formatChoice.img_assist_custom.png |Format choice dialog}}
+![Format choice dialog](formatChoice.img_assist_custom.png?classes=caption "Format choice dialog")
 
 
 RTF
