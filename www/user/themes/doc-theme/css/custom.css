@@ -30,6 +30,7 @@ figure.image-caption figcaption {
 
 .searchboxmod form {
     display: flex;
+    align-items: center;   /* Vertically center everything */
 }
 
 .searchboxmod label {
