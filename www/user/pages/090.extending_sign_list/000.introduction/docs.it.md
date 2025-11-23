@@ -5,13 +5,13 @@ taxonomy:
     tag: []
 ---
 
-Gli utenti di JSesh possono creare i propri cartelli utilizzando software come Adobe Illustrator o Inkscape (che è gratuito).
+Gli utenti di JSesh possono creare i propri simboli utilizzando software come Adobe Illustrator o Inkscape (che è gratuito).
 
-JSesh può importare cartelli da:
+JSesh può importare simboli da:
 
 * font true type (vedi fontforge per un editor gratuito);
 
-* file SVG: SVG è un formato relativamente recente per la grafica vettoriale. È molto potente e completo. Attualmente, JSesh riconosce i file SVG se il cartello è disegnato in nero su bianco. È possibile modificare i file SVG con diversi programmi; uno dei migliori gratuiti è Inkscape, che ha il vantaggio di essere multipiattaforma.
+* file SVG: SVG è un formato relativamente recente per la grafica vettoriale. È molto potente e completo. Attualmente, JSesh riconosce i file SVG se il simbolo è disegnato in nero su bianco. È possibile modificare i file SVG con diversi programmi; uno dei migliori gratuiti è Inkscape, che ha il vantaggio di essere multipiattaforma.
 
 Per compatibilità con il mio software precedente (tksesh), può anche leggere:
 

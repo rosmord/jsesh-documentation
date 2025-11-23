@@ -91,7 +91,7 @@ Ora, assicurati che tutti i tratti siano trasformati in tracciato e usa l'operat
 
 ![](./ink9.png)
 
-Ti consiglio vivamente di conservare una versione di backup del tuo simbolo in cui i tratti non siano trasformati in tracciati, ti permetterà di rielaborarlo più facilmente o di riutilizzarlo come parte di altri cartelli. Questo è ciò che faccio io per i miei font Ramesside.
+Ti consiglio vivamente di conservare una versione di backup del tuo simbolo in cui i tratti non siano trasformati in tracciati, ti permetterà di rielaborarlo più facilmente o di riutilizzarlo come parte di altri simboli. Questo è ciò che faccio io per i miei font Ramesside.
 
 ## Aggiunta di altri dettagli
 
@@ -103,6 +103,6 @@ che salviamo con il nome `C102.svg`.
 
 ## Commenti finali
 
-Da un'immagine a bassa risoluzione, possiamo ottenere un glifo dall'aspetto gradevole. Ricorda che il simbolo sarà piuttosto piccolo e non aggiungere troppi dettagli (dare la possibilità di aumentare i dettagli del simbolo con le sue dimensioni è un'opzione interessante, utilizzata nei font Gardiner's Lead). Cerca di mescolare con i cartelli esistenti. Infatti, se hai sorgenti SVG per cartelli simili, prova a riutilizzarle.
+Da un'immagine a bassa risoluzione, possiamo ottenere un glifo dall'aspetto gradevole. Ricorda che il simbolo sarà piuttosto piccolo e non aggiungere troppi dettagli (dare la possibilità di aumentare i dettagli del simbolo con le sue dimensioni è un'opzione interessante, utilizzata nei font Gardiner's Lead). Cerca di mescolare con i simboli esistenti. Infatti, se hai sorgenti SVG per simboli simili, prova a riutilizzarle.
 
 Il segno fornito in questo esempio non è un esempio calzante. La "Wꜣs", per esempio, è troppo alta e il segno non si integra bene con i font esistenti. Quindi dovremmo accorciare lo scettro. In generale, il nostro Ptah è troppo scarno rispetto agli altri segni. Mantenere le fasi intermedie del tuo lavoro ti permetterà di correggere più facilmente. Ad esempio, se i tratti sono troppo spessi, se hai mantenuto una versione del segno in cui i tratti sono ancora tratti e non sono ancora stati sostituiti da tracciati, la correzione è molto semplice.

@@ -17,7 +17,7 @@ Si apre la finestra dell'editor del glossario e tutto ciò che devi fare è digi
 
 ![LEditor del Glossario ](./glossaryB_it.png?classes=caption "The Glossary Editor")
 
-Non appena il gruppo è stato aggiunto, è possibile inserirlo digitandone il codice, proprio come si digita il codice di un cartello.
+Non appena il gruppo è stato aggiunto, è possibile inserirlo digitandone il codice, proprio come si digita il codice di un simbolo.
 In questo caso specifico, poiché abbiamo usato "pA" come codice e "pA" consente di digitare G41 e G40, la barra spaziatrice consentirà di scorrere tutte le soluzioni.
 
 ## Ulteriori informazioni

@@ -96,17 +96,17 @@ Queste nozioni saranno utilizzate da JSesh sia per la palette dei simboli (con i
 
 ![](descriptionEditor.png?classes=caption "Editor di descrizione a testo libero")
 
-Questo campo consente commenti a testo libero per i segnali. L'uso più importante è documentare segnali non comuni, fornendo riferimenti bibliografici e, in generale, aiutando l'utente a selezionare il segnale migliore. Se si desidera che la descrizione del segnale venga inclusa nella versione distribuita di JSesh, è necessario che siano presenti riferimenti bibliografici a supporto. Si noti inoltre che JSesh è un software libero, ma che deve rispettare il copyright. Pertanto, questo non è il luogo per la copia anonima degli elenchi di segnali delle grammatiche più comuni (ciò non significa, ovviamente, che non si possano utilizzare come fonti). È possibile scrivere descrizioni in più lingue, anche se sarebbe preferibile disporre di una versione in inglese per ciascun segnale. JSesh stesso, tuttavia, attualmente utilizza solo la versione in inglese.
+Questo campo consente commenti a testo libero per i simboli. L'uso più importante è documentare simboli non comuni, fornendo riferimenti bibliografici e, in generale, aiutando l'utente a selezionare il segnale migliore. Se si desidera che la descrizione del segnale venga inclusa nella versione distribuita di JSesh, è necessario che siano presenti riferimenti bibliografici a supporto. Si noti inoltre che JSesh è un software libero, ma che deve rispettare il copyright. Pertanto, questo non è il luogo per la copia anonima degli elenchi di simboli delle grammatiche più comuni (ciò non significa, ovviamente, che non si possano utilizzare come fonti). È possibile scrivere descrizioni in più lingue, anche se sarebbe preferibile disporre di una versione in inglese per ciascun segnale. JSesh stesso, tuttavia, attualmente utilizza solo la versione in inglese.
 
 ## Editor elenco tag
 
 ![](SignTagsWindow.png?classes=caption "Editor elenco tag")
 
-Questa finestra consente di descrivere il cartello in termini di varie parole descrittive brevi chiamate "tag". Questi sono disponibili nella palette per selezionare sottocategorie di una determinata famiglia. Ad esempio, i caratteri "in piedi" (ovviamente, i tag utilizzati qui non si applicano ad A44). La finestra di sinistra mostra tutti i tag disponibili, elencando prima quelli già utilizzati per questa famiglia e poi gli altri tag. Il modo migliore per taggare i cartelli è guardare cartelli simili e vedere come si fa.
+Questa finestra consente di descrivere il simbolo in termini di varie parole descrittive brevi chiamate "tag". Questi sono disponibili nella palette per selezionare sottocategorie di una determinata famiglia. Ad esempio, i caratteri "in piedi" (ovviamente, i tag utilizzati qui non si applicano ad A44). La finestra di sinistra mostra tutti i tag disponibili, elencando prima quelli già utilizzati per questa famiglia e poi gli altri tag. Il modo migliore per taggare i simboli è guardare simboli simili e vedere come si fa.
 
-Vorrei attirare la vostra attenzione su alcuni tag molto utili, che sono leggermente diversi. Si tratta di "cartello alto e stretto", "cartello basso e largo" e "cartello lungo e stretto". Questi tag sono utilizzati come famiglie speciali nella palette JSesh.
+Vorrei attirare la vostra attenzione su alcuni tag molto utili, che sono leggermente diversi. Si tratta di "simbolo alto e stretto", "simbolo basso e largo" e "simbolo lungo e stretto". Questi tag sono utilizzati come famiglie speciali nella palette JSesh.
 
-Per aggiungere un nuovo tag a un cartello, è sufficiente selezionarlo nell'elenco di sinistra e fare clic sulla freccia da sinistra a destra. Per rimuovere un tag, utilizzare lo stesso principio. Tieni presente che non puoi rimuovere i tag forniti nell'elenco "ufficiale" di JSesh.
+Per aggiungere un nuovo tag a un simbolo, è sufficiente selezionarlo nell'elenco di sinistra e fare clic sulla freccia da sinistra a destra. Per rimuovere un tag, utilizzare lo stesso principio. Tieni presente che non puoi rimuovere i tag forniti nell'elenco "ufficiale" di JSesh.
 
 v## La finestra di creazione dei tag
 

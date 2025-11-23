@@ -85,7 +85,7 @@ Per selezionare una zona di testo, è possibile utilizzare diversi metodi:
 
 ## Raggruppamento dei simboli
 
-Questo si fa utilizzando il menu "Manipolazione del testo". È possibile raggruppare i simboli in gruppi verticali o orizzontali, selezionando i simboli (o i quadrati) e scegliendo "Raggruppa orizzontalmente" o "Raggruppa verticalmente". Si noti che è possibile suddividere i gruppi con il menu "Esplodi gruppo". Tutti i tipi di gruppi possono essere "esplosi".
+Questo si fa utilizzando il menu "Manipolazione del testo". È possibile raggruppare i simboli in gruppi verticali o orizzontali, selezionando i simboli (o i quadranti) e scegliendo "Raggruppa orizzontalmente" o "Raggruppa verticalmente". Si noti che è possibile suddividere i gruppi con il menu "Esplodi gruppo". Tutti i tipi di gruppi possono essere "esplosi".
 
 "Raggruppa orizzontalmente" ha la scorciatoia da tastiera "Ctrl-h"
 
@@ -93,7 +93,7 @@ Questo si fa utilizzando il menu "Manipolazione del testo". È possibile raggrup
 
 ## Legature
 
-JSesh conosce diversi "gruppi speciali", o legature, che vanno oltre le capacità dei quadrati "quadrati". Ad esempio, "w" e "t" saranno probabilmente disposte in questo modo: ![](w_and_t.png?classes=inline). Per ottenere questo tipo di disposizione, seleziona i simboli che vuoi legare e usa il menu Manipolazione del testo/Elementi di legatura.
+JSesh conosce diversi "gruppi speciali", o legature, che vanno oltre le capacità dei quadranti "quadrati". Ad esempio, "w" e "t" saranno probabilmente disposte in questo modo: ![](w_and_t.png?classes=inline). Per ottenere questo tipo di disposizione, seleziona i simboli che vuoi legare e usa il menu Manipolazione del testo/Elementi di legatura.
 
 Tuttavia, JSesh non sa come legare tutti i gruppi, anche se ne conosce alcuni piuttosto "sportivi": legatura
 ![](stp_n_ra1.png?classes=inline) gives ![](stp_n_ra2.png?classes=inline).
@@ -117,4 +117,4 @@ Si aprirà la seguente finestra:
 
 ![Editor dei gruppi](groupEditor_it.png "Editor dei gruppi")
 
-Potrai spostare i simboli, ridimensionarli e ruotarli. Nota che il ridimensionamento e la rotazione sono attivati ​​da due pulsanti. Per spostare un cartello, cliccaci sopra e trascinalo dove vuoi. Per ruotarlo o ridimensionarlo, clicca e trascina uno dei piccoli riquadri rossi attorno al cartello attualmente selezionato.
+Potrai spostare i simboli, ridimensionarli e ruotarli. Nota che il ridimensionamento e la rotazione sono attivati ​​da due pulsanti. Per spostare un simbolo, cliccaci sopra e trascinalo dove vuoi. Per ruotarlo o ridimensionarlo, clicca e trascina uno dei piccoli riquadri rossi attorno al simbolo attualmente selezionato.
