@@ -28,7 +28,7 @@ The first solutions are very simple:
 
 ### Manage it at the font level
 
-As you know, you can have a [custom folder for your own hieroglyphs](http://127.0.0.1:8000/en/extending_sign_list/importingglyphs). You can simply get the signs from JSesh version A, and copy them in a folder to use them in JSesh version B.
+As you know, you can have a [custom folder for your own hieroglyphs](/extending_sign_list/importingglyphs). You can simply get the signs from JSesh version A, and copy them in a folder to use them in JSesh version B.
 
 There are two ways to do this. 
 
