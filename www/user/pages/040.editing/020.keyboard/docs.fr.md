@@ -23,6 +23,10 @@ Les codes phonétiques peutvent correspondre à plus d'un signe. Par exemple, iw
 
 Votre dernier choix sera enregistré pour la prochaine fois que vous saisirez **le même code au cours de la même session.**
 
+Si la translittération associée à un signe contient plusieurs mots, généralement séparés par des traits d’union, saisissez la translittération **sans les traits d’union.** Par exemple, taper `HwtHr` vous donnera <span class="mdc">C9</span>, puis <span class='mdc'>O10</span>.
+
+
+
 ### Codes phonétiques
 
 Les signes unilitères possèdent les codes suivants, qui sont également utilisés lorsque l'on saisit leur translitération :

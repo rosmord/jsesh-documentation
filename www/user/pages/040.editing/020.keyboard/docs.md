@@ -20,6 +20,8 @@ The sign will be added to the hieroglyphic text.
 
 Phonetic codes can correspond to more than one sign. For instance, iw corresponds to one of <span class="mdc">N18</span>,  <span class="mdc">D54</span>, <span class="mdc">E9</span>,  <span class="mdc">E14</span> and <span class="mdc">F51</span>.The “official”  sign for iw is <span class="mdc">iw</span>, according to the *manuel* (a relatively weird choice, as <span class="mdc">D54</span> seems more frequent). However, you might want another sign. In this case, it's quite simple : press the **space bar**, and the system will circle through the possibilities, one at a time.
 
+If the transliteration associated with a sign contains *multiple* words, usually separated by hyphens, type the transliteration **without the hyphens**. For instance typing `HwtHr` will get you <span class="mdc">C9</span> and then <span class='mdc'>O10</span>.
+
 Your last choice will be retained the next time you type the code in this session.
 
 ### Phonetic codes
@@ -56,6 +58,7 @@ The uniliteral signs have the following codes, which are also used when typing t
 | D    | ḏ         |
 
 W is also used for Z7, M for Aa15, and N for S3.
+
 
 ## Grouping signs
 

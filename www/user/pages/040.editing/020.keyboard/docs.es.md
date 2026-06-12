@@ -19,6 +19,9 @@ Los códigos fonéticos pueden corresponder con más de un signo. Por ejemplo `i
 
 Tu última selección se guardará para la próxima vez que escibas ese código en esa sesión.
 
+Si la transliteración asociada a un signo contiene múltiples palabras, normalmente separadas por guiones, escribe la transliteración **sin los guiones.** Por ejemplo, al escribir `HwtHr` obtendrás <span class="mdc">C9</span> y luego <span class='mdc'>O10</span>.
+
+
 ## Agrupando signos
 
 El signo que escribas al validar se puede usar para agrupar los jeroglíficos. 'Espacio' y '-' hacen que el signo siguiente se añanda en un cuadro nuevo.
@@ -26,7 +29,7 @@ El signo que escribas al validar se puede usar para agrupar los jeroglíficos. '
 * ':' y '*' añadirán el signo siguiente debajo o al lado respectivamente del último signo entrado.
 
 * 'enter' tiene dos consecuencias : valida el signo (si lo hay) y añade una nueva línea.
-* 
+
 Si no se ha entrado ningún código, el signo de agrupación previo agrupará los dos últimos cuadros. Parece un poco extraño, pero verás que es bastante natural. Puedes usarlo para agrupar signo en un momento posterior.
 
 ## Exempli gratia

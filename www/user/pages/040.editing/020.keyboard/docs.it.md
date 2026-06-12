@@ -22,6 +22,9 @@ I codici fonetici possono corrispondere a più di un simbolo. Ad esempio, iw cor
 
 L'ultima scelta verrà mantenuta la prossima volta che digiterai il codice in questa sessione.
 
+Se la traslitterazione associata a un segno contiene più parole, di solito separate da trattini, digita la traslitterazione **senza i trattini.** Per esempio, digitando `HwtHr` otterrai <span class="mdc">C9</span> e poi <span class='mdc'>O10</span>.
+
+
 ### Codici fonetici
 
 I simboli monolitteri hanno i seguenti codici, che vengono utilizzati anche quando si digita la traslitterazione:
