@@ -137,7 +137,7 @@ Questa finestra (accessibile tramite il menu Strumenti) consente di creare nuovi
 Le descrizioni dei tuoi simboli sono memorizzate in un file chiamato `signs_definition.xml`, che si trova in:
 
 * `(La tua directory home)/Libreria/Preferenze/JSesh` su Macintosh. Ad esempio: `/Utenti/rosmord/Libreria/Preferenze/JSesh/signs_definition.xml` sul mio computer.
-* `c:\Documents and Settings\TUO LOGIN\JSeshData` su Windows (in pratica, JSeshData nella tua cartella personale). Normalmente, la directory JSeshData viene creata da JSesh, quindi puoi cercarla in caso di dubbi. Ad esempio, `C:\Documents and Settings\Rosmord\JSeshData`.
+* `C:\Users\TUO LOGIN\JSeshData` su Windows (in pratica, JSeshData nella tua cartella personale). Normalmente, la directory JSeshData viene creata da JSesh, quindi puoi cercarla in caso di dubbi. Ad esempio, `C:\Users\Rosmord\JSeshData`.
 * `$HOME/.jsesh` su Linux.
 
 Per contribuire con le descrizioni dei segnali a JSesh, inviami semplicemente questo file. Deciderò cosa includere nella distribuzione generale di JSesh. Ci sono molti problemi di cui devo tenere conto: il software deve rimanere sufficientemente generico, sufficientemente corretto e devo evitare violazioni del copyright.

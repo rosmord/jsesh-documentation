@@ -7,7 +7,7 @@ taxonomy:
 
 Beware: technically explicit content. Pure souls, avert your eyes. A more user friendly system has been created.
 
-Alternatively, you may directly edit your file description file. You need some kind of simple editor to do this : The notepad might do on windows, and softwares like TextWrangler can be used on Mac OS X. XML files are made of plain text.
+Alternatively, you may directly edit your file description file. You need some kind of simple editor to do this : The notepad might do on windows, and software like TextWrangler can be used on Mac OS X. XML files are made of plain text.
 
 JSesh won't accept badly formed files, so you may find yourself unable to launch JSesh. If this is the case, either correct signs_definition.xml, or rename it to something else, so that it will be ignored. In the future, I will add a user friendly editor, but I won't do it until the format is completely defined.
 The file must have the following form:
@@ -22,9 +22,9 @@ The file must have the following form:
 </signs>
 ~~~
 
-It is important to have exactly this content, specially the DOCTYPE line.
+It is important to have exactly this content, especially the DOCTYPE line.
 
-Here is a small example (actually, a part of JSesh standard sign description file). This file describes signs C1 and C1A. You see that they are classified in a number of categories. They are both human-headed deities and seated characters. The translitteration of C1 is given. We have provided one for C1A as well. The code ''"relevance='1'"'' means that this translitteration is here only for informationnal purposes. Actually, the XML format has been prepared to accomodate a lot of different data, which is not really used yet by JSesh, and I am very interested in getting suggestions about it. The definition for the format (its "dtd") is given just after this appendix.
+Here is a small example (actually, a part of JSesh standard sign description file). This file describes signs C1 and C1A. You see that they are classified in a number of categories. They are both human-headed and seated characters. The transliteration of C1 is given; the `use="keyboard"` attribute means that this transliteration can be used to type the sign (the `use` and `type` attributes are described in the previous appendix). C1A is declared as a graphical variant of C1, and shares its tags and parts. Actually, the XML format has been prepared to accommodate a lot of different data, which is not really used yet by JSesh, and I am very interested in getting suggestions about it. The definition for the format (its "dtd") is given just after this appendix.
 
 ~~~xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -33,22 +33,20 @@ Here is a small example (actually, a part of JSesh standard sign description fil
 
 <!-- As C is the most complete part of JSesh fonts now, we try to cover it fully. -->
 
-<tagCategory tag="human-headed deity" label="human-headed deity"/>
-<tagCategory tag="hawk-headed deity" label="hawk-headed deity"/>
-<tagCategory tag="ibis-headed deity" label="ibis-headed deity"/>
-<tagCategory tag="ram-headed deity" label="ram-headed deity"/>
+<tagCategory tag="human-headed"/>
+<tagCategory tag="seated"/>
 
 <sign sign="C1">
- <hasTranslitteration sign="C1" translitteration="ra"/>
- <hasTag tag="human-headed deity"/>
+ <hasTransliteration transliteration="ra" type="phonogram" use="keyboard"/>
+ <hasTag tag="human-headed"/>
  <hasTag tag="seated"/>
  <contains partCode="N6"/>
+ <contains partCode="A40"/>
 </sign>
 
 <sign sign="C1A">
- <similarTo baseSign="C1"/>
- <hasTranslitteration translitteration="ra" relevance="1"/>
- <hasTag tag="human-headed deity"/>
+ <variantOf baseSign="C1" isSimilar="y" linguistic="unspecified"/>
+ <hasTag tag="human-headed"/>
  <hasTag tag="seated"/>
  <contains partCode="N6"/>
  <contains partCode="S40"/>
@@ -100,6 +98,7 @@ For the more technically-oriented, here is the current DTD used for sign descrip
   For instance, the D36 sign (ayin) is a partial variant of D37 (di), as D36 can write "di". However,
   in this case, I would not consider D37 as a variant of D36, because it would cause more harm than good.
  "no" is used when the sign is not at all a linguistic variant. In this case, isSimilar is normally "y".
+        "unspecified" is used when the sign creator hasn't made a choice for yet.
 
 -->
 

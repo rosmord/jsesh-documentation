@@ -36,9 +36,9 @@ As we are not great drawers, we use the "Bezier curve" tool to do it. We get the
 
 ![First sketch](ink1.png?classes=caption "First sketch")
 
-Note that we have selected "no fill" and a small contour width. We have also left the "Was" sign alone.
+Note that we have selected "no fill" and a small contour width. We have also left the "Wꜣs" sign alone.
 
-## Fit the outline 
+## Fit the outline
 
 Straight line segments won't make a great sign. So we convert some of them to curve, we add new points if needed, etc...
 We start with the head...
@@ -52,13 +52,13 @@ And here is the result:
 
 ## Working on details
 
-We want our signs to be readable at small size, so we won't fill to much details.
+We want our signs to be readable at small size, so we won't fill too many details.
 
-## Ptah's beard
+### Ptah's beard
 
 The outline of Ptah's body will be enlarged to make the final sign. But we would like the beard to be filled((in this case, we gave Ptah an osirian beard, which is an error)). Hence, we must separate it from the rest of the drawing. This is done by selecting the control points which separate the beard from the body:
 
-![Controls points for the beard](./ink4.png?classes=caption "Controls points for the beard")
+![Control points for the beard](./ink4.png?classes=caption "Control points for the beard")
 
 
 And then selecting the "Break apart" entry in the "Path" menu, which gives us two objects : the beard and the rest of the body.
@@ -68,7 +68,7 @@ We can then fill the gap we have just created (and give Ptah a chin) :-).
 
 Now, the beard should also be closed. We edit the fill and stroke characteristics of the beard, and we give it a solid black filling, and no stroke. If the beard is too thin, we will be able to dilate it with the "outset" action of the path menu.
 
-## Ptah's necklace counterpoise
+### Ptah's necklace counterpoise
 
 For this one, the original scan is a bit rough. We dig some iconography, and we come with a two parts necklace counterpoise.
 
@@ -96,7 +96,7 @@ Now, get sure all strokes are transformed to path, and use the union operator on
 
 ![](./ink9.png)
 
-I strongly suggest you keep a backup version of your sign in which strokes are not tranformed to path, it will allow you to rework your sign more easily, or to reuse it as part of other signs. That's what I do for my Ramesside fonts. 
+I strongly suggest you keep a backup version of your sign in which strokes are not transformed to path, it will allow you to rework your sign more easily, or to reuse it as part of other signs. That's what I do for my Ramesside fonts. 
 
 ## Adding other details
 
@@ -108,6 +108,6 @@ which we save under the name `C102.svg` .
 
 ## Final comments
 
-From a rather low resolution picture, we can get a decent-looking glyph. Remember that the sign will be rather small, and don't add too many details (giving the possibility to increase the sign's details with its size is an interesting option, which is used in the Gardiner's lead fonts). Try to mix with the existing signs.In fact, if you have SVG sources for similar signs, try to reuse them.
+From a rather low resolution picture, we can get a decent-looking glyph. Remember that the sign will be rather small, and don't add too many details (giving the possibility to increase the sign's details with its size is an interesting option, which is used in the Gardiner's lead fonts). Try to mix with the existing signs. In fact, if you have SVG sources for similar signs, try to reuse them.
 
 The sign given in this example is not too good an example. The "Wꜣs", for one, is too high, and the sign won't mix well with the existing fonts. So we should make the scepter shorter. In general, our Ptah is too lean compared with the other signs. Keeping intermediate stages of your work will allow you to correct things more easily. For instance, if the strokes are too fat, if you have kept a version of the sign where the strokes are still strokes, and have not yet been replaced by paths, the correction is very easy.

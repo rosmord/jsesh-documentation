@@ -1,0 +1,9 @@
+---
+title: Exporter en RTF
+taxonomy:
+    category: docs
+---
+
+RTF (Rich Text Format) est un format de document portable qui peut être lu par la plupart des traitements de texte (par exemple, MS Word et OpenOffice).
+
+Pour exporter un texte en RTF, choisissez l'entrée de menu « `Fichier/Exporter/Exporter comme RTF` ».

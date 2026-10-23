@@ -7,7 +7,7 @@ taxonomy:
 
 ## Introduction
  
-JSesh has now a relatively advanced ligature mechanism, which is not as good as the one in RES, but give reasonnable results in most cases. In many cases, JSesh is able to "guess" where ligatured groups should fit, but it can also do with some extra help. This help can be provided in the sign's SVG file itself, and we decided to use the mechanisms of inkscape for that.
+JSesh has now a relatively advanced ligature mechanism, which is not as good as the one in RES, but gives reasonable results in most cases. In many cases, JSesh is able to "guess" where ligatured groups should fit, but it can also do with some extra help. This help can be provided in the sign's SVG file itself, and we decided to use the mechanisms of Inkscape for that.
 
 ## Ligature zones
 
@@ -16,12 +16,12 @@ For each sign, JSesh will try to compute two ligature zones, one for ligatures o
 ![The A17 sign with its two ligature zones](zones1.png?classes=caption "The A17 sign with its two ligature zones")
 
 
-to create one of the two ligature zones in inkscape, do the following:
+To create one of the two ligature zones in Inkscape, do the following:
 
 - create a rectangle where the group should fit. Note that the whole group will be scaled to fit there, so draw it large enough. I usually draw these rectangles in red, but it's only a convention.
 - open the contextual menu for the rectangle (right-click over the rectangle), and select object properties . You will get the object properties window ( Figure “Zone Properties” below.) Define the Id as either "zone1" or "zone2". Don't forget to click on the Define button to validate your modification. Also clear the label (more on this in the section called “Ligature zones gravity” ).
 
-Admitedly, we are using the id and label information in a way they are not supposed to be used. The reason for this is purely pragmatic. It's far easier to do things that way, as the sign creator has no need to know about the inner organization of the XML format.
+Admittedly, we are using the id and label information in a way they are not supposed to be used. The reason for this is purely pragmatic. It's far easier to do things that way, as the sign creator has no need to know about the inner organization of the XML format.
 
 ![](./zoneProperties.png?classes=caption "Zone Properties")
 

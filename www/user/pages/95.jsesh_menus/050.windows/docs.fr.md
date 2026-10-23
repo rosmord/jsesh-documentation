@@ -1,0 +1,18 @@
+---
+title: Fenêtre
+taxonomy:
+    category: docs
+    tag: []
+---
+
+![Menu Fenêtre](./menufenetre.png?classes=caption "Menu Fenêtre")
+
+**Réduire** : enlève la fenêtre de JSesh du bureau
+
+**Agrandir** : ajuste la fenêtre de JSesh à la taille de l'écran
+
+**(sans_nom)** : affiche ici la liste des fenêtres d'édition ouvertes (« sans_nom » est le nom par défaut donné lorsqu'on crée une nouvelle session d'édition)
+
+**Glossaire** : affiche le glossaire
+
+**Hiéroglyphes** : affiche la palette des hiéroglyphes

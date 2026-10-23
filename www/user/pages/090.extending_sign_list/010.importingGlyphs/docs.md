@@ -8,7 +8,7 @@ taxonomy:
 ## Choosing a folder for your signs
 
 In order to be able to add new signs, you must first choose where they will be stored on your computer. To do this, simply select Tools/Edit Preferences
-In the "Font Selection" tab (currently the only one available), enter the folder you want to use in the "Hieroglyphic font directory" field. You should create an empty folder for this specific purporse.
+In the "Font Selection" tab (currently the only one available), enter the folder you want to use in the "Hieroglyphic font directory" field. You should create an empty folder for this specific purpose.
 
 Creating a folder:
 
@@ -32,7 +32,7 @@ to get an uid, register as JSesh user. Note for tksesh users: the uid is simply 
 
 Be careful when giving signs a name. You want your files to be readable by anyone, so be faithful to the *Manuel de codage*. Our current suggestions are the following:
 
-* If you create your own version of a sign in the Manuel (either because it isn't available in JSesh yet, or you don't like the default sign provided, use either the standard Manuel de codage for the sign, or use the following notation: `US` + **uid** + `Gardiner code`, where **uid** is the user id. For instance, if you have user id 527834, it would be `US527834A1VARA` for a variant of `A1`.
+* If you create your own version of a sign in the Manuel (either because it isn't available in JSesh yet, or you don't like the default sign provided), use either the standard Manuel de codage for the sign, or use the following notation: `US` + **uid** + `Gardiner code`, where **uid** is the user id. For instance, if you have user id 527834, it would be `US527834A1VARA` for a variant of `A1`.
 
 * When you create a sign which you consider as a variant of a standard sign, you should build its name like that: **USuid+Gardiner Code+"VAR"+VARIANT CODE** where : 
   * Gardiner Code is the standard Manuel de codage code for the base sign 
@@ -46,7 +46,7 @@ You are free to choose the number you like, but I would suggest you try to find 
 
   Example : the Harp Louvre E 116 A has recently been published by C. Barbotin (La voix des hiéroglyphes, p. 66-67), and in its text appears the unknown sign ![](./aa1000.png?classes=inline). I can create this sign, and give it, for instance, the code US1Aa1000XT. On the other hand, the Israel Stela contains a sign which is most probably a griffin, but does not correspond to any registered griffin sign in the manuel <span class="mdc">US1E162VARA</span>. So I gave it the code US1E162VARA, because E162 is a griffin sign.
 
-* Using this system when importing texts from other softwares: it is possible that other softwares provide their own “non standard” codes. If you want to import texts from those software into JSesh, you might need to give a name to the new signs they contain (note that fonts are usually protected by copyright laws, so you will need to redraw the signs yourself, either by adaptating existing JSesh signs or by finding a picture of the signs in original hieroglyphic sources). For compatibility purposes, the following user id codes can be used for other softwares: 
+* Using this system when importing texts from other softwares: it is possible that other softwares provide their own “non standard” codes. If you want to import texts from those software into JSesh, you might need to give a name to the new signs they contain (note that fonts are usually protected by copyright laws, so you will need to redraw the signs yourself, either by adapting existing JSesh signs or by finding a picture of the signs in original hieroglyphic sources). For compatibility purposes, the following user id codes can be used for other softwares: 
 
 | software    | user id substitute |
 | ----------- | ------------------ |
@@ -58,9 +58,9 @@ You are free to choose the number you like, but I would suggest you try to find 
 
 If you think of other softwares I should add, please tell me.
   
-* standard manuel de codage code. You will find these codes in Hannig's WB, for instance. A number of lists are also available on the web. Please, note that using the codes is one thing, but that the actual signs drawing in the fonts of other softwares are legally protected. So, have to come with you own versions of the signs, either from actual sources or by re-creating them. You will find more information on signs drawing in the next section. In our example, your duck would replace the normal one, so it would have code "G39".
+* standard manuel de codage code. You will find these codes in Hannig's WB, for instance. A number of lists are also available on the web. Please, note that using the codes is one thing, but that the actual signs drawing in the fonts of other softwares are legally protected. So, you have to come up with your own versions of the signs, either from actual sources or by re-creating them. You will find more information on signs drawing in the next section. In our example, your duck would replace the normal one, so it would have code "G39".
 
-We suggest that, if you create a sign with an “normal”  gardiner code, you also give it an user sign code. This way, you will be sure to keep it even it a sign with this Gardiner code is later added to the software.
+We suggest that, if you create a sign with an “normal”  gardiner code, you also give it an user sign code. This way, you will be sure to keep it even if a sign with this Gardiner code is later added to the software.
 
 Note that for compatibility with tksesh, we also support arbitrary "user glyph codes". These codes correspond to the codes tksesh gave to new signs. User glyph codes have the form **UG id M mid N sid** , where id, mid, and sid are numbers. Avoid using those codes for now.
 
@@ -104,7 +104,7 @@ Simply click on the "import file" button, and select the file which contains you
 
 You must then name your sign. JSesh will try to guess a name from the file name, but it might get it wrong.
 
-**Note** Giving a name doesn't mean the sign has been saved in your library. Nothing is done when as long as you haven't pressed the insert button.
+**Note** Giving a name doesn't mean the sign has been saved in your library. Nothing is done as long as you haven't pressed the insert button.
 
 ### Fine tuning your signs
 

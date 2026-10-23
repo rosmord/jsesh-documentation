@@ -24,7 +24,7 @@ Il file deve avere il seguente formato:
 
 IÈ importante avere esattamente questo contenuto, in particolare la riga DOCTYPE.
 
-Ecco un piccolo esempio (in realtà, una parte del file di descrizione dei simboli standard di JSesh). Questo file descrive i simboli C1 e C1A. Come potete vedere, sono classificati in diverse categorie. Sono entrambi divinità con testa umana e personaggi seduti. Viene fornita la traslitterazione di C1. Ne abbiamo fornita una anche per C1A. Il codice ''"relevance='1'"'' significa che questa traslitterazione è qui solo a scopo informativo. In realtà, il formato XML è stato preparato per ospitare molti dati diversi, il che non è ancora realmente utilizzato da JSesh, e sono molto interessato a ricevere suggerimenti al riguardo. La definizione del formato (il suo "dtd") è fornita subito dopo questa appendice.
+Ecco un piccolo esempio (in realtà, una parte del file di descrizione dei simboli standard di JSesh). Questo file descrive i simboli C1 e C1A. Come potete vedere, sono classificati in diverse categorie. Sono entrambi personaggi con testa umana e seduti. Viene fornita la traslitterazione di C1; l'attributo `use="keyboard"` significa che questa traslitterazione può essere usata per digitare il simbolo (gli attributi `use` e `type` sono descritti nell'appendice precedente). C1A è dichiarato come variante grafica di C1, di cui condivide i tag e le parti. In realtà, il formato XML è stato preparato per ospitare molti dati diversi, il che non è ancora realmente utilizzato da JSesh, e sono molto interessato a ricevere suggerimenti al riguardo. La definizione del formato (il suo "dtd") è fornita subito dopo questa appendice.
 
 ~~~xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -33,22 +33,20 @@ Ecco un piccolo esempio (in realtà, una parte del file di descrizione dei simbo
 
 <!-- Poiché C è attualmente la parte più completa dei font JSesh, cerchiamo di coprirla in modo completo. -->
 
-<tagCategory tag="human-headed deity" label="human-headed deity"/>
-<tagCategory tag="hawk-headed deity" label="hawk-headed deity"/>
-<tagCategory tag="ibis-headed deity" label="ibis-headed deity"/>
-<tagCategory tag="ram-headed deity" label="ram-headed deity"/>
+<tagCategory tag="human-headed"/>
+<tagCategory tag="seated"/>
 
 <sign sign="C1">
- <hasTranslitteration sign="C1" translitteration="ra"/>
- <hasTag tag="human-headed deity"/>
+ <hasTransliteration transliteration="ra" type="phonogram" use="keyboard"/>
+ <hasTag tag="human-headed"/>
  <hasTag tag="seated"/>
  <contains partCode="N6"/>
+ <contains partCode="A40"/>
 </sign>
 
 <sign sign="C1A">
- <similarTo baseSign="C1"/>
- <hasTranslitteration translitteration="ra" relevance="1"/>
- <hasTag tag="human-headed deity"/>
+ <variantOf baseSign="C1" isSimilar="y" linguistic="unspecified"/>
+ <hasTag tag="human-headed"/>
  <hasTag tag="seated"/>
  <contains partCode="N6"/>
  <contains partCode="S40"/>
@@ -100,6 +98,7 @@ Sia B una variante di A.
 Ad esempio, il simbolo D36 (ayin) è una variante parziale di D37 (di), poiché D36 può scrivere "di". Tuttavia,
 in questo caso, non considererei D37 come una variante di D36, perché causerebbe più danni che benefici.
 "no" si usa quando il simbolo non è affatto una variante linguistica. In questo caso, isSimilar è normalmente "y".
+"unspecified" si usa quando chi crea il simbolo non ha ancora fatto una scelta.
 
 -->
 

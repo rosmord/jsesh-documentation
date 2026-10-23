@@ -27,9 +27,9 @@ The signs are defined by the following information:
 * The signs which are part of this sign. For instance, A6 contains a W54 sign
 * The sign(s) of which they are variants
 * Descriptions in free text of the sign, which may include for instance bibliographical remarks
-* Tags are short description items attached to the signs, and used to select them. For instance, "enemy" is attached to signs which represent an ennemy.
+* Tags are short description items attached to the signs, and used to select them. For instance, "enemy" is attached to signs which represent an enemy.
 
-When you start the sign description editor, it automatically read the standard sign descriptions as well as your own descriptions. You can then add or change data, and save the result (simply by choosing "save" in the menu). Note that the editor will prevent you from changing the information which is stored in the system sign descriptions.
+When you start the sign description editor, it automatically reads the standard sign descriptions as well as your own descriptions. You can then add or change data, and save the result (simply by choosing "save" in the menu). Note that the editor will prevent you from changing the information which is stored in the system sign descriptions.
 
 An important feature of the editor is that you can use the sign palette (from the tool menu) to select signs.
 
@@ -37,7 +37,7 @@ An important feature of the editor is that you can use the sign palette (from th
 
 ![](SignInfoWindow.png?classes=caption "The Main Sign Info Editor Window")
 
-The sign info editor main windows allows one to edit information on a given sign. Selecting the sign you want to work on can be done in many ways. You can navigate with the arrows on the bottom of the window, type the sign code in the "Code" field, or simply drag and drop the sign from the palette. Once a sign appear, you can add information about it.
+The sign info editor main windows allows one to edit information on a given sign. Selecting the sign you want to work on can be done in many ways. You can navigate with the arrows on the bottom of the window, type the sign code in the "Code" field, or simply drag and drop the sign from the palette. Once a sign appears, you can add information about it.
 
 The "basic sign" check box is used to say that the sign should appear in the sign palette even if "show all" is not selected.
 
@@ -58,7 +58,7 @@ You can then fix the "type" and "use" values.
 
 I'm not sure whether or not the "type" is useful, and it's currently not used by JSesh. The "use" column is, on the other hand, quite important.
 
-The "use" explain in which context this transliteration is used in the software. Note that each level of use in included in the next one. For instance, if you chose "keyboard", the sign will be also used in "palette" and "informative" contexts.
+The "use" explains in which context this transliteration is used in the software. Note that each level of use is included in the next one. For instance, if you choose "keyboard", the sign will be also used in "palette" and "informative" contexts.
 
 #### Types 
 
@@ -67,7 +67,7 @@ The "use" explain in which context this transliteration is used in the software.
 * abbreviation: use for signs which are actual abbreviations for words. They are not normally followed by Z1 in writing. Exempli gratia: G37 can be used as abbreviation for "Sri".
 * typical: the sign is typical for some word. Often useful for some determinatives. I use it for G37's value "bin".
 * keyboard: the sign will be accessible through this transliteration in JSesh when using the keyboard to enter signs. For instance, D54's transliteration "iw".
-* palette: the sign will not be accessible from the keyboard through this tranliteration, but will be accessible through the palette. Note that if a user uses transliteration to access a sign in the palette, he will be able to access it through its transliteration afterwards.
+* palette: the sign will not be accessible from the keyboard through this transliteration, but will be accessible through the palette. Note that if a user uses transliteration to access a sign in the palette, he will be able to access it through its transliteration afterwards.
 * informative: the transliteration is given only for informative purposes. It will appear in the "value" field of the palette, but that's all.
 
 ## *Part of sign* editor
@@ -82,7 +82,7 @@ The *part of sign* editor allows to describe the elements of a sign in terms of 
 
 The notion of variant is a tricky one. In fact, it's not that well defined, and, worse, its useful meaning may depend on the context. There are in fact two notions. One is graphical. A **graphical variant** of a sign is a sign which **looks like** another one. Another notion is linguistic. A sign is a **linguistic variant** of another one if it has the **same values and uses**. The two notions often overlap, but not always. For instance, Y2 is both a graphical variation of Y1, and a linguistic variant thereof. On the other hand, `A17A` <span class="mdc">A17A</span> is only a graphical variant of A17 <span class="mdc">A17</span>. It doesn't have the same uses at all;  Z7 <span class="mdc">Z7</span> and G43 <span class='mdc'>G43</span> are linguistic variants, but not graphical variant at all.
 
-These notions will be used by JSesh both for the sign palette (with its "variant of " button) and for the search system. It may be usefull, while searching for words with G43, to retrieve those with Z7.
+These notions will be used by JSesh both for the sign palette (with its "variant of " button) and for the search system. It may be useful, while searching for words with G43, to retrieve those with Z7.
 
 * is similar: is checked if the signs "look the same".
 * degree: list how close the relationship between the two signs is. It can be one of :
@@ -96,7 +96,7 @@ These notions will be used by JSesh both for the sign palette (with its "variant
 
 ![](descriptionEditor.png?classes=caption "Free-text Description Editor")
 
-This field allows free text comments for signs. The most important use for this is to document uncommon signs, giving bibliographical references about them, and in general helping the user to select the best possible sign. If you want your sign description to be included in the distributed version of JSesh, they should have bibliographical references to back up their claim. Please also note that JSesh is a free software, but that it must respect copyright. So, this is not the place for blind copying of the sign lists of the usual grammars (it doesn't mean of course that you can't use them as sources). You can write descriptions in multiple languages, although it would be better if there were an english version for each sign. JSesh itself currently uses only the english version, this being said.
+This field allows free text comments for signs. The most important use for this is to document uncommon signs, giving bibliographical references about them, and in general helping the user to select the best possible sign. If you want your sign description to be included in the distributed version of JSesh, it should have bibliographical references to back up their claim. Please also note that JSesh is free software, but that it must respect copyright. So, this is not the place for blind copying of the sign lists of the usual grammars (it doesn't mean of course that you can't use them as sources). You can write descriptions in multiple languages, although it would be better if there were an english version for each sign. JSesh itself currently uses only the english version, this being said.
 
 ## Tag list editor
 
@@ -112,20 +112,20 @@ To add a new tag to a sign, simply select the tag in the left list, and click on
 
 ![](./tagEditor.png?classes=caption "The Tag Creation Window")
 
-This window (accessible through the tools menu) allows you to create new tag, and associate multilingual translation with them. Those translation are not currently used.
+This window (accessible through the tools menu) allows you to create a new tag, and associate multilingual translation with them. Those translations are not currently used.
 
 ## The menus
 
 ### File
 
 * Open user default file: opens the file which contains your own definitions for signs. Those will automatically be used by JSesh the next time it's launched.
-* Save :saves your work in your user definition file. As long as it hasn't been done, your file is unchanged.
-* Clear :create a brand new workspace, with no data in it but the "official" one. Your user file will in any case be changed only if you save your work.
+* Save: saves your work in your user definition file. As long as it hasn't been done, your file is unchanged.
+* Clear: create a brand new workspace, with no data in it but the "official" one. Your user file will in any case be changed only if you save your work.
 
 ### Edit
 
   * copy: copy this sign's definition for future use
-  * paste: paste the data copyied for another sign into this sign definition. Very usefull when dealing with close variants.
+  * paste: paste the data copied for another sign into this sign definition. Very useful when dealing with close variants.
 
 ### Tools
 
@@ -137,7 +137,7 @@ This window (accessible through the tools menu) allows you to create new tag, an
 Your sign descriptions are stored in a file called `signs_definition.xml`, which is placed in:
 
 * `(Your home directory)/Library/Preferences/JSesh` on macintoshes. For instance: `/Users/rosmord/Library/Preferences/JSesh/signs_definition.xml` on my machine.
-* `c:\Documents and Settings\YOUR LOGIN\JSeshData` on windows (basically, JSeshData in your personnal folder). Normally, the JSeshData directory is created by JSesh, so you can search for it if you have doubts. For instance, `C:\Documents and Settings\Rosmord\JSeshData`.
+* `C:\Users\YOUR LOGIN\JSeshData` on windows (basically, JSeshData in your personal folder). Normally, the JSeshData directory is created by JSesh, so you can search for it if you have doubts. For instance, `C:\Users\Rosmord\JSeshData`.
 * `$HOME/.jsesh` on linux.
 
-To contribute your sign descriptions to JSesh, simply send me this file. I will decide what can go in the general JSesh distribution. There are many problems I must take into account: the software must remain general enough, correct enough, and I must avoid copyright infrigement.
+To contribute your sign descriptions to JSesh, simply send me this file. I will decide what can go in the general JSesh distribution. There are many problems I must take into account: the software must remain general enough, correct enough, and I must avoid copyright infringement.
