@@ -13,7 +13,7 @@ Si vous savez programmer en **Java,** vous pouvez utiliser **JSesh** comme *bibl
 
 JSesh 8 nécessite **Java 25**, et se compile avec **Gradle**.
 
-Ce guide est organisé autour de cas d'usage concrets :
+Ce guide est organisé autour de cas d'usage concrets ; la partie [How to](/developpers_guide/jsesh_8/howto) sera probablement la plus utile :
 
 - [Obtenir le code](/developpers_guide/jsesh_8/getting_the_code) : récupérer et compiler les sources ;
 - [Utiliser JSesh dans votre projet](/developpers_guide/jsesh_8/using_jsesh_in_your_project) : les dépendances Gradle (ou Maven) ;
@@ -24,7 +24,7 @@ Ce guide est organisé autour de cas d'usage concrets :
 - [Ressources et polices](/developpers_guide/jsesh_8/resources_and_fonts) : polices, base de signes et glossaire ;
 - [Exports](/developpers_guide/jsesh_8/exporting) : PDF, SVG, RTF et autres formats ;
 - [Référence rapide](/developpers_guide/jsesh_8/quick_reference) ;
-- [Recettes](/developpers_guide/jsesh_8/howto) : petits exemples.
+- [How to](/developpers_guide/jsesh_8/howto) : petits exemples.
 
 Si vous avez du code écrit pour JSesh 7, voyez [Passer de JSesh 7 à JSesh 8](/developpers_guide/jsesh_7_to_jsesh_8).
 

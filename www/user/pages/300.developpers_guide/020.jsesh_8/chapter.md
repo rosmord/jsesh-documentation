@@ -13,7 +13,7 @@ If you know how to program in **Java,** you can use **JSesh** as a *library* for
 
 JSesh 8 requires **Java 25**, and is built with **Gradle**.
 
-This guide is organised around concrete use cases:
+This guide is organised around concrete use cases; the [How to](/developpers_guide/jsesh_8/howto) part will probably be the most useful:
 
 - [Getting the code](/developpers_guide/jsesh_8/getting_the_code): getting and building the sources;
 - [Using JSesh in your project](/developpers_guide/jsesh_8/using_jsesh_in_your_project): the Gradle (or Maven) dependencies;
