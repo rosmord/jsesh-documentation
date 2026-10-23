@@ -2,14 +2,14 @@
 title: Appendice C: guida per gli sviluppatori
 taxonomy:
     category: docs
+    tag: []
 ---
- 
 
 ### Appendice C
 
 # Guida per sviluppatori
 
+JSesh può essere usato come libreria dai programmatori Java. La guida per sviluppatori è divisa in due parti, una per ciascuna versione principale del programma:
 
-Se sai programmare in **Java**, puoi usare **JSesh** come *libreria* per i tuoi programmi.
-
-**(da aggiungere: aggiungere le librerie JSesh corrette a un progetto Maven; link a progetti di esempio...)**
+- [Guida per sviluppatori per JSesh 7.x](/developpers_guide/jsesh_7): la serie stabile attuale.
+- [Guida per sviluppatori per JSesh 8](/developpers_guide/jsesh_8): la nuova versione (in preparazione).

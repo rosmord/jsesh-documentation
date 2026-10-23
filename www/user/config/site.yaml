@@ -8,3 +8,6 @@ taxonomies: [category,tag,author]
 summary:
   size: 300
 
+redirects:
+  /developpers_guide/getting_the_code: /developpers_guide/jsesh_7/getting_the_code
+  /developpers_guide/howto: /developpers_guide/jsesh_7/howto
